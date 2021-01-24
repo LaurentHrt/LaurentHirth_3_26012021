@@ -1,0 +1,18 @@
+.banniere {
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 400;
+        background-image: linear-gradient(
+            to bottom right,
+            $secondary-color,
+            $primary-color
+        );
+        border-radius: 2em;
+        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.3);
+        height: 50px;
+        width: 218px;
+    }
+}

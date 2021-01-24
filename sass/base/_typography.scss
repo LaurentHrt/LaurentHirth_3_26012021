@@ -3,8 +3,17 @@
 /* ******************************************************** */
 @font-face {
     font-family: "Roboto";
-    src: url("../polices/Roboto/") format("woff2 supports variations"),
-        url("../polices/Roboto/") format("woff2-variations");
-    font-weight: 100 1000;
-    font-stretch: 25% 151%;
+    src: url("../polices/Roboto/Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../polices/Roboto/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url("../polices/Shrikhand/Shrikhand-regular.ttf") format("truetype");
 }
