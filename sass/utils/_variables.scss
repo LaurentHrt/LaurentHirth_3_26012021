@@ -1,3 +1,4 @@
+// Couleurs
 $dark-background: #eaeaea;
 $light-background: #f6f6f6;
 $footer-background: #353535;
@@ -7,3 +8,28 @@ $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 
 $text-color: #353535;
+
+@mixin btn-background {
+    background-image: linear-gradient(
+        to bottom right,
+        $secondary-color,
+        $primary-color
+    );
+}
+
+// Radius
+$card-radius: 15px;
+
+// Ombres
+@mixin card-shadow {
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+// Bordures
+@mixin card-border {
+    border-radius: $card-radius;
+}
+
+@mixin btn-border {
+    border-radius: 2em;
+}

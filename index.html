@@ -26,7 +26,7 @@
                 Belleville
             </p>
         </section>
-        <section class="banniere">
+        <section class="section banniere">
             <h1>Réservez le menu qui vous convient</h1>
             <p>
                 Découvrez des retaurants d'exception, séléctionnés par nos
@@ -36,35 +36,41 @@
                 ><div class="banniere__btn">Explorer nos restaurants</div></a
             >
         </section>
-        <section class="fonctionnement">
+        <section class="section fonctionnement">
             <h1>Fonctionnement</h1>
             <div class="carte carte-fonctionnement">
-                <span>1</span>
-                <span><i class="fas fa-mobile-alt"></i></span>
-                <span>Choisissez un restaurant</span>
+                <div class="carte-fonctionnement__numero">1</div>
+                <div><i class="fas fa-mobile-alt"></i></div>
+                <div>Choisissez un restaurant</div>
             </div>
             <div class="carte carte-fonctionnement">
-                <span>2</span>
-                <span><i class="fas fa-list-ul"></i></span>
-                <span>Composez votre menu</span>
+                <div class="carte-fonctionnement__numero">2</div>
+                <div><i class="fas fa-list-ul"></i></div>
+                <div>Composez votre menu</div>
             </div>
             <div class="carte carte-fonctionnement">
-                <span>3</span>
-                <span><i class="fas fa-store"></i></span>
-                <span>Dégustez au restaurant</span>
+                <div class="carte-fonctionnement__numero">3</div>
+                <div><i class="fas fa-store"></i></div>
+                <div>Dégustez au restaurant</div>
             </div>
         </section>
-        <section class="restaurants">
+
+        <section class="section restaurants">
             <h1>Restaurants</h1>
             <div class="carte carte-restaurant">
                 <img
+                    class="carte-restaurant__photo"
                     src="public/img/restaurants/jay-wennington.jpg"
                     alt="Restaurant la palette du gout"
                 />
-                <img src="#" alt="nouveau" class="carte-restaurant__nouveau" />
-                <div>
-                    <p class="carte-restaurant__nom">La palette du gôut</p>
-                    <p class="carte-restaurant__lieu">Ménilmontant</p>
+                <div class="carte-restaurant__nouveau">Nouveau</div>
+                <div class="carte-restaurant__texte">
+                    <div class="carte-restaurant__texte__nom">
+                        La palette du goût
+                    </div>
+                    <div class="carte-restaurant__texte__lieu">
+                        Ménilmontant
+                    </div>
                 </div>
                 <div class="carte-restaurant__coeur">
                     <i class="far fa-heart"></i>
@@ -72,13 +78,16 @@
             </div>
             <div class="carte carte-restaurant">
                 <img
+                    class="carte-restaurant__photo"
                     src="public/img/restaurants/stil.jpg"
                     alt="Restaurant la note enchantée"
                 />
-                <img src="#" alt="nouveau" class="carte-restaurant__nouveau" />
-                <div>
-                    <p class="carte-restaurant__nom">La note enchantée</p>
-                    <p class="carte-restaurant__lieu">Charonne</p>
+                <div class="carte-restaurant__nouveau">Nouveau</div>
+                <div class="carte-restaurant__texte">
+                    <div class="carte-restaurant__texte__nom">
+                        La note enchantée
+                    </div>
+                    <div class="carte-restaurant__texte__lieu">Charonne</div>
                 </div>
                 <div class="carte-restaurant__coeur">
                     <i class="far fa-heart"></i>
@@ -86,12 +95,15 @@
             </div>
             <div class="carte carte-restaurant">
                 <img
+                    class="carte-restaurant__photo"
                     src="public/img/restaurants/toa-heftiba.jpg"
                     alt="Restaurant a la française"
                 />
-                <div>
-                    <p class="carte-restaurant__nom">A la française</p>
-                    <p class="carte-restaurant__lieu">Cité rouge</p>
+                <div class="carte-restaurant__texte">
+                    <div class="carte-restaurant__texte__nom">
+                        A la française
+                    </div>
+                    <div class="carte-restaurant__texte__lieu">Cité rouge</div>
                 </div>
                 <div class="carte-restaurant__coeur">
                     <i class="far fa-heart"></i>
@@ -99,12 +111,17 @@
             </div>
             <div class="carte carte-restaurant">
                 <img
+                    class="carte-restaurant__photo"
                     src="public/img/restaurants/louis-hansel.jpg"
                     alt="Restaurant le delice des sens"
                 />
-                <div>
-                    <p class="carte-restaurant__nom">Le délice des sens</p>
-                    <p class="carte-restaurant__lieu">Folie-Méricourt</p>
+                <div class="carte-restaurant__texte">
+                    <div class="carte-restaurant__texte__nom">
+                        Le délice des sens
+                    </div>
+                    <div class="carte-restaurant__texte__lieu">
+                        Folie-Méricourt
+                    </div>
                 </div>
                 <div class="carte-restaurant__coeur">
                     <i class="far fa-heart"></i>
@@ -113,13 +130,11 @@
         </section>
 
         <footer>
-            <ul>
-                <li>ohmyfood</li>
-                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-                <li>Mentions légales</li>
-                <li>Contact</li>
-            </ul>
+            <div>ohmyfood</div>
+            <div><i class="fas fa-utensils"></i> Proposer un restaurant</div>
+            <div><i class="fas fa-hands-helping"></i> Devenir partenaire</div>
+            <div>Mentions légales</div>
+            <div>Contact</div>
         </footer>
     </body>
 </html>

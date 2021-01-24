@@ -1,3 +1,7 @@
+.section {
+    padding: 50px 20px;
+}
+
 .localisation {
     display: flex;
     justify-content: center;
@@ -17,5 +21,17 @@
     align-items: center;
     text-align: center;
     background-color: $light-background;
-    padding: 50px;
+}
+
+.fonctionnement {
+    h1 {
+        margin-bottom: 30px;
+    }
+}
+
+.restaurants {
+    background-color: $light-background;
+    h1 {
+        margin-bottom: 20px;
+    }
 }
