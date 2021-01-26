@@ -133,6 +133,11 @@ a:visited {
   font-size: 21px;
 }
 
+.carte-restaurant__coeur i:hover {
+  font-weight: 900;
+  color: #9356dc;
+}
+
 .banniere__btn {
   display: -webkit-box;
   display: -ms-flexbox;

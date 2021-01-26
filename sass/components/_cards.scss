@@ -76,5 +76,9 @@
         right: 25px;
         bottom: 30px;
         font-size: 21px;
+        i:hover {
+            font-weight: 900;
+            color: $primary-color;
+        }
     }
 }
