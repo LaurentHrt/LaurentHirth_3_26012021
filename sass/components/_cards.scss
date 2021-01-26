@@ -82,3 +82,20 @@
         }
     }
 }
+
+.carte-plat {
+    padding: 12px 20px 12px 12px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    &__texte {
+        &__titre {
+            font-weight: 400;
+            margin-bottom: 7px;
+        }
+    }
+    &__prix {
+        align-self: flex-end;
+        font-weight: 400;
+    }
+}

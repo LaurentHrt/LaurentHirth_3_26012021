@@ -1,0 +1,20 @@
+.menu {
+    &__photo {
+        width: 100%;
+    }
+    &__barre-separation {
+        height: 3px;
+        width: 40px;
+        background-color: $tertiary-color;
+        margin-bottom: 13px;
+    }
+    &__entete {
+        font-family: "Shrikhand";
+        font-size: 28px;
+    }
+    &__titre {
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        margin-top: 22px;
+    }
+}

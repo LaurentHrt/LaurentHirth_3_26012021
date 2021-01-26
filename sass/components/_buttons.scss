@@ -1,15 +1,18 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    height: 50px;
+    width: 218px;
+    margin: 13px;
+    @include card-shadow;
+    @include btn-background;
+    @include btn-border;
+}
+
 .banniere {
     &__btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-weight: 400;
-        height: 50px;
-        width: 218px;
-        margin: 13px;
-        @include card-shadow;
-        @include btn-background;
-        @include btn-border;
     }
 }

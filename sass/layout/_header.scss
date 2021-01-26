@@ -1,8 +1,15 @@
 header {
     text-align: center;
-}
-
-header img {
-    width: 165px;
-    padding: 21px 20px 10px;
+    img {
+        width: 165px;
+        padding: 21px 20px 10px;
+    }
+    .header__arrow {
+        position: absolute;
+        left: 22px;
+        top: 24px;
+        i {
+            font-size: 20px;
+        }
+    }
 }

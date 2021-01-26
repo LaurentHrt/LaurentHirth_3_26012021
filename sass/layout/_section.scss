@@ -38,3 +38,12 @@
         margin-bottom: 20px;
     }
 }
+
+.menu {
+    background-color: $light-background;
+    padding: 39px 15px 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    top: -50px;
+}
