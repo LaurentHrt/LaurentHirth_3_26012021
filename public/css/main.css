@@ -223,6 +223,11 @@ footer {
   padding: 20px 20px 30px 20px;
 }
 
+footer a,
+footer a:visited {
+  color: white;
+}
+
 footer div {
   font-family: "Shrikhand";
   font-size: larger;
