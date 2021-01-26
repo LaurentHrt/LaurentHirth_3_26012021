@@ -55,14 +55,14 @@
         background-color: $tertiary-color;
         color: darken($tertiary-color, 40%);
         font-weight: 400;
-        font-size: smaller;
+        font-size: 14px;
         padding: 6px 10px;
         border-radius: 2px;
         text-align: center;
         @include card-shadow;
     }
     &__texte {
-        padding: 15px 12px;
+        padding: 12px 12px;
         &__nom {
             font-weight: 400;
             font-size: 18px;
