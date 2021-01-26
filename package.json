@@ -4,8 +4,7 @@
     "description": "[OC] Projet 3",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",

@@ -1,5 +1,5 @@
 .section {
-    padding: 50px 20px;
+    padding: 39px 20px 50px;
 }
 
 .localisation {
@@ -11,7 +11,8 @@
     box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
     font-weight: 400;
     &__icone {
-        margin-right: 1em;
+        position: absolute;
+        left: 6.5em;
     }
 }
 
@@ -31,6 +32,8 @@
 
 .restaurants {
     background-color: $light-background;
+    padding-top: 47px;
+    padding-bottom: 44px;
     h1 {
         margin-bottom: 20px;
     }

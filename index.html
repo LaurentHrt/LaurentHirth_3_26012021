@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Fontawesome pour les icones -->
         <link rel="stylesheet" href="./public/css/fontawesome.css" />
-        <link rel="stylesheet" href="./public/css/style.css" />
+        <link rel="stylesheet" href="./public/css/main.css" />
         <link
             rel="shortcut icon"
             href="public/img/favicon.ico"
@@ -21,10 +21,8 @@
             />
         </header>
         <section class="localisation">
-            <p>
-                <i class="fas fa-map-marker-alt localisation__icone"></i>Paris,
-                Belleville
-            </p>
+            <p><i class="fas fa-map-marker-alt localisation__icone"></i></p>
+            <p>Paris, Belleville</p>
         </section>
         <section class="section banniere">
             <h1>Réservez le menu qui vous convient</h1>
@@ -40,17 +38,23 @@
             <h1>Fonctionnement</h1>
             <div class="carte carte-fonctionnement">
                 <div class="carte-fonctionnement__numero">1</div>
-                <div><i class="fas fa-mobile-alt"></i></div>
+                <div class="carte-fonctionnement__icone">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
                 <div>Choisissez un restaurant</div>
             </div>
             <div class="carte carte-fonctionnement">
                 <div class="carte-fonctionnement__numero">2</div>
-                <div><i class="fas fa-list-ul"></i></div>
+                <div class="carte-fonctionnement__icone">
+                    <i class="fas fa-list-ul"></i>
+                </div>
                 <div>Composez votre menu</div>
             </div>
             <div class="carte carte-fonctionnement">
                 <div class="carte-fonctionnement__numero">3</div>
-                <div><i class="fas fa-store"></i></div>
+                <div class="carte-fonctionnement__icone">
+                    <i class="fas fa-store"></i>
+                </div>
                 <div>Dégustez au restaurant</div>
             </div>
         </section>
@@ -131,10 +135,12 @@
 
         <footer>
             <div>ohmyfood</div>
-            <div><i class="fas fa-utensils"></i> Proposer un restaurant</div>
-            <div><i class="fas fa-hands-helping"></i> Devenir partenaire</div>
-            <div>Mentions légales</div>
-            <div>Contact</div>
+            <ul>
+                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                <li>Mentions légales</li>
+                <li>Contact</li>
+            </ul>
         </footer>
     </body>
 </html>
