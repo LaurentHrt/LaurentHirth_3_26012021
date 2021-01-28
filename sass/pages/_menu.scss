@@ -1,8 +1,5 @@
-.menu-body {
-	background-image: url("../../public/img/restaurants/jay-wennington.jpg");
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: auto $menu-page-background-spacing + $big-radius * 2 + 20px;
+.body-lapalettedugout {
+	@include menu-bg-image("../../public/img/restaurants/jay-wennington.jpg");
 }
 
 .menu {

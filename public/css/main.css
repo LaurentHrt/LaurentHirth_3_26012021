@@ -150,6 +150,9 @@ a:visited {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .carte-plat__texte__titre {
@@ -158,9 +161,18 @@ a:visited {
 }
 
 .carte-plat__prix {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   font-weight: 400;
+  justify-self: flex-end;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
 }
 
 .btn {
@@ -178,11 +190,16 @@ a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   color: white;
   font-weight: 400;
   height: 50px;
-  width: 218px;
   margin: 13px;
+  padding: 0 35px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 header {
@@ -229,16 +246,6 @@ header .header__arrow i {
 }
 
 .banniere {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
   background-color: #f6f6f6;
 }
@@ -299,11 +306,12 @@ footer i {
   width: 22px;
 }
 
-.menu-body {
+.body-lapalettedugout {
   background-image: url("../../public/img/restaurants/jay-wennington.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto 320px;
+  background-attachment: fixed;
 }
 
 .menu__barre-separation {
@@ -316,6 +324,13 @@ footer i {
 .menu__entete {
   font-family: "Shrikhand";
   font-size: 1.75em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
 }
 
 .menu__titre {
