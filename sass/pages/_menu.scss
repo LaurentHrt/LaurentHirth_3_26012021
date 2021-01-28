@@ -17,6 +17,10 @@
 	}
 	&__entete {
 		@include restaurant-title-style;
+		& i:hover {
+			font-weight: 900;
+			color: $primary-color;
+		}
 	}
 	&__titre {
 		@include menu-title-style;

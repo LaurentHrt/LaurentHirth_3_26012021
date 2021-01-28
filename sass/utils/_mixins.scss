@@ -33,6 +33,14 @@
 	box-shadow: $standard-shadow;
 }
 
+@mixin selection-btn-style {
+	background-color: $check-btn-color;
+	border-bottom-right-radius: $standard-radius;
+	border-top-right-radius: $standard-radius;
+	width: 0px;
+	height: 100%;
+}
+
 @mixin card-style {
 	box-shadow: $standard-shadow;
 	border-radius: $standard-radius;

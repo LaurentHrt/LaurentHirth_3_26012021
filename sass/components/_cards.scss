@@ -75,16 +75,17 @@
 }
 
 .carte-plat {
-	padding: $standard-card-text-padding;
+	height: 69px;
 	margin-bottom: 15px;
 	display: flex;
-	justify-content: space-between;
 	align-items: flex-end;
-	transition: transform 0.2s ease-in-out;
+	overflow: hidden;
 	&__texte {
 		height: $carte-plat-height;
+		padding: $standard-card-text-padding;
 		white-space: nowrap;
 		overflow: hidden;
+		flex-grow: 1;
 		&__titre {
 			font-weight: 400;
 			margin-bottom: 7px;
@@ -98,6 +99,30 @@
 	}
 	&__prix {
 		font-weight: 400;
-		justify-self: flex-end;
+		padding: 12px 20px 12px 0;
+	}
+	&__selectBtn {
+		content: "";
+		@include selection-btn-style;
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+		transform-origin: right;
+		transition: width 0.4s ease-in-out;
+		i {
+			font-size: 1.2em;
+			position: relative;
+			right: -20px;
+			transition: transform 0.4s ease-in-out;
+			color: white;
+		}
+	}
+	&:hover {
+		& .carte-plat__selectBtn {
+			width: 59px;
+			i {
+				transform: rotate(1turn);
+			}
+		}
 	}
 }
