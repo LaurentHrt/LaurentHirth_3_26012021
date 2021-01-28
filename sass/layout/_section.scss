@@ -19,6 +19,10 @@
 .banniere {
 	text-align: center;
 	background-color: $light-background;
+	&__texte {
+		font-weight: 600;
+		font-size: 1.3em;
+	}
 }
 
 .fonctionnement {
