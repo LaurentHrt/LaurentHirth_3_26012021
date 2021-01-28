@@ -4,4 +4,8 @@
 
 .btn {
 	@include btn-style;
+	transition: 0.2s cubic-bezier(0.77, 0.24, 0.26, 0.74);
+	&:hover {
+		transform: scale(1.1);
+	}
 }
