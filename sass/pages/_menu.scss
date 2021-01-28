@@ -17,6 +17,9 @@
 	}
 	&__entete {
 		@include restaurant-title-style;
+		& i:hover {
+			@include heart-hover-style;
+		}
 	}
 	&__titre {
 		@include menu-title-style;
