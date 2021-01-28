@@ -186,7 +186,12 @@ a:visited {
 }
 
 .carte-plat__selectBtn {
+<<<<<<< HEAD
   background-color: #99e2d0;
+=======
+  content: "";
+  background-color: #6ab9a5;
+>>>>>>> develop
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   width: 0px;
@@ -199,6 +204,7 @@ a:visited {
           align-items: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+<<<<<<< HEAD
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   -webkit-transform-origin: right;
@@ -213,10 +219,26 @@ a:visited {
 }
 
 .carte-plat__selectBtn i {
+=======
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.carte-plat__selectBtn i {
+  font-size: 1.2em;
+  position: relative;
+  right: -20px;
+>>>>>>> develop
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+<<<<<<< HEAD
+=======
+  color: white;
+>>>>>>> develop
 }
 
 .carte-plat:hover .carte-plat__selectBtn {
