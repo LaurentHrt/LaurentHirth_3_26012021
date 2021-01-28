@@ -1,0 +1,53 @@
+@mixin btn-style {
+    background-image: linear-gradient(
+        to bottom right,
+        $secondary-color,
+        $primary-color
+    );
+    border-radius: 2em;
+    box-shadow: $standard-shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    height: 50px;
+    width: 218px;
+    margin: 13px;
+}
+
+@mixin new-button-style {
+    width: 60px;
+    height: 17px;
+    background-color: $tertiary-color;
+    color: darken($tertiary-color, 40%);
+    font-weight: 400;
+    font-size: 0.9em;
+    padding: 6px 10px;
+    border-radius: $small-radius;
+    text-align: center;
+    box-shadow: $standard-shadow;
+}
+
+@mixin card-style {
+    box-shadow: $standard-shadow;
+    border-radius: $standard-radius;
+}
+
+@mixin separation-style {
+    height: 3px;
+    width: 40px;
+    background-color: $tertiary-color;
+    margin-bottom: 13px;
+}
+
+@mixin restaurant-title-style {
+    font-family: "Shrikhand";
+    font-size: 1.75em;
+}
+
+@mixin menu-title-style {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 22px;
+}

@@ -1,6 +1,5 @@
 .carte {
-    @include card-border;
-    @include card-shadow;
+    @include card-style;
 }
 
 .carte-fonctionnement {
@@ -10,7 +9,6 @@
     margin-left: 12px;
     height: 72px;
     background-color: $light-background;
-
     div {
         display: flex;
         justify-content: center;
@@ -27,10 +25,10 @@
         min-width: 24px;
         height: 24px;
         text-align: center;
-        font-size: 14px;
+        font-size: 0.9em;
     }
     &__icone {
-        font-size: 20px;
+        font-size: 1.25em;
         width: 20px;
     }
 }
@@ -41,8 +39,8 @@
     height: 250px;
     &__photo {
         object-fit: cover;
-        border-top-left-radius: $card-radius;
-        border-top-right-radius: $card-radius;
+        border-top-left-radius: $standard-radius;
+        border-top-right-radius: $standard-radius;
         width: 100%;
         height: 70%;
     }
@@ -50,22 +48,13 @@
         position: absolute;
         top: 14px;
         right: 11px;
-        width: 60px;
-        height: 17px;
-        background-color: $tertiary-color;
-        color: darken($tertiary-color, 40%);
-        font-weight: 400;
-        font-size: 14px;
-        padding: 6px 10px;
-        border-radius: 2px;
-        text-align: center;
-        @include card-shadow;
+        @include new-button-style;
     }
     &__texte {
-        padding: 12px 12px;
+        padding: $standard-card-text-padding;
         &__nom {
             font-weight: 400;
-            font-size: 18px;
+            font-size: 1.1em;
             margin-bottom: 5px;
         }
         &__lieu {
@@ -75,7 +64,7 @@
         position: absolute;
         right: 25px;
         bottom: 30px;
-        font-size: 21px;
+        font-size: 1.3em;
         i:hover {
             font-weight: 900;
             color: $primary-color;
@@ -84,7 +73,7 @@
 }
 
 .carte-plat {
-    padding: 12px 20px 12px 12px;
+    padding: $standard-card-text-padding;
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;

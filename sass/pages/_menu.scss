@@ -1,20 +1,18 @@
+.menu-body {
+	background-image: url("../../public/img/restaurants/jay-wennington.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: auto $menu-page-background-spacing + $big-radius * 2 + 20px;
+}
+
 .menu {
-    &__photo {
-        width: 100%;
-    }
-    &__barre-separation {
-        height: 3px;
-        width: 40px;
-        background-color: $tertiary-color;
-        margin-bottom: 13px;
-    }
-    &__entete {
-        font-family: "Shrikhand";
-        font-size: 28px;
-    }
-    &__titre {
-        text-transform: uppercase;
-        margin-bottom: 5px;
-        margin-top: 22px;
-    }
+	&__barre-separation {
+		@include separation-style;
+	}
+	&__entete {
+		@include restaurant-title-style;
+	}
+	&__titre {
+		@include menu-title-style;
+	}
 }
