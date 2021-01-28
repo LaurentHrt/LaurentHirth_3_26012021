@@ -79,9 +79,18 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	&__texte {
+		height: $carte-plat-height;
+		white-space: nowrap;
+		overflow: hidden;
 		&__titre {
 			font-weight: 400;
 			margin-bottom: 7px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		&__description {
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 	}
 	&__prix {

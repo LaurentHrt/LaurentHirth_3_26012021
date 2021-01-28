@@ -159,9 +159,22 @@ a:visited {
           align-items: flex-end;
 }
 
+.carte-plat__texte {
+  height: 45px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .carte-plat__texte__titre {
   font-weight: 400;
   margin-bottom: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carte-plat__texte__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .carte-plat__prix {
@@ -317,6 +330,30 @@ footer i {
 
 .body-lapalettedugout {
   background-image: url("../../public/img/restaurants/jay-wennington.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 320px;
+  background-attachment: fixed;
+}
+
+.body-alafrancaise {
+  background-image: url("../../public/img/restaurants/toa-heftiba.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 320px;
+  background-attachment: fixed;
+}
+
+.body-lanoteenchantee {
+  background-image: url("../../public/img/restaurants/stil.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 320px;
+  background-attachment: fixed;
+}
+
+.body-ledelicedessens {
+  background-image: url("../../public/img/restaurants/louis-hansel.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto 320px;

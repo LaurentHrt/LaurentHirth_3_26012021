@@ -1,6 +1,15 @@
 .body-lapalettedugout {
 	@include menu-bg-image("../../public/img/restaurants/jay-wennington.jpg");
 }
+.body-alafrancaise {
+	@include menu-bg-image("../../public/img/restaurants/toa-heftiba.jpg");
+}
+.body-lanoteenchantee {
+	@include menu-bg-image("../../public/img/restaurants/stil.jpg");
+}
+.body-ledelicedessens {
+	@include menu-bg-image("../../public/img/restaurants/louis-hansel.jpg");
+}
 
 .menu {
 	&__barre-separation {
