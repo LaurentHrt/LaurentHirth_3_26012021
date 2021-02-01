@@ -23,3 +23,40 @@ a:visited {
 	color: $text-color;
 	display: contents;
 }
+
+.spinner-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	transform-origin: left;
+	position: fixed;
+	background-color: white;
+	animation: eraser 500ms $spinner-duration + $spinner-offset * 2 forwards;
+}
+
+.spinner {
+	position: absolute;
+	margin: auto;
+	width: 300px;
+	height: 30px;
+	background-color: black;
+	animation: spinner $spinner-duration $spinner-offset backwards;
+	transform-origin: left;
+}
+
+@keyframes eraser {
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes spinner {
+	0% {
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}

@@ -1,5 +1,23 @@
 .carte {
 	@include card-style;
+	animation: card-showup $card-showup-duration $spinner-duration + $spinner-offset * 2 both;
+}
+
+@for $i from 1 to $cardCount {
+	a:nth-child(#{$i}) > .carte {
+		animation-delay: $spinner-duration + $card-showup-offset + ($card-showup-delay * $i);
+	}
+}
+
+@keyframes card-showup {
+	0% {
+		opacity: 0;
+		transform: translateY(15px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 
 .carte-fonctionnement {
