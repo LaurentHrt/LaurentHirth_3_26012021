@@ -25,19 +25,20 @@ a:visited {
 }
 
 .spinner-container {
+	display: contents;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	width: 100vw;
-	transform-origin: left;
 	position: fixed;
 	background-color: white;
-	animation: eraser 500ms $spinner-duration + $spinner-offset * 2 forwards;
+	z-index: 9999;
+	animation: eraser 500ms $spinner-duration + $spinner-offset * 2 both;
 }
 
 .spinner {
-	position: absolute;
+	position: fixed;
 	margin: auto;
 	width: 300px;
 	height: 30px;
@@ -47,8 +48,15 @@ a:visited {
 }
 
 @keyframes eraser {
+	75% {
+		opacity: 0;
+	}
+	99% {
+		transform: translateX(0);
+	}
 	100% {
 		opacity: 0;
+		transform: translateX(-9999px);
 	}
 }
 

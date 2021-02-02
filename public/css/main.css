@@ -45,6 +45,7 @@ a:visited {
 }
 
 .spinner-container {
+  display: contents;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,16 +57,15 @@ a:visited {
           align-items: center;
   height: 100vh;
   width: 100vw;
-  -webkit-transform-origin: left;
-          transform-origin: left;
   position: fixed;
   background-color: white;
-  -webkit-animation: eraser 500ms 4s forwards;
-          animation: eraser 500ms 4s forwards;
+  z-index: 9999;
+  -webkit-animation: eraser 500ms 4s both;
+          animation: eraser 500ms 4s both;
 }
 
 .spinner {
-  position: absolute;
+  position: fixed;
   margin: auto;
   width: 300px;
   height: 30px;
@@ -77,14 +77,32 @@ a:visited {
 }
 
 @-webkit-keyframes eraser {
+  75% {
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
   100% {
     opacity: 0;
+    -webkit-transform: translateX(-9999px);
+            transform: translateX(-9999px);
   }
 }
 
 @keyframes eraser {
+  75% {
+    opacity: 0;
+  }
+  99% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
   100% {
     opacity: 0;
+    -webkit-transform: translateX(-9999px);
+            transform: translateX(-9999px);
   }
 }
 
@@ -492,16 +510,16 @@ header .header__arrow i {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #eaeaea;
-  height: 50px;
-  margin: auto;
   -webkit-box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
           box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
   font-weight: 400;
 }
 
 .localisation__icone {
-  position: absolute;
-  left: 6.5em;
+  margin: auto 0;
+  width: 0;
+  position: relative;
+  right: 40px;
 }
 
 .banniere {
