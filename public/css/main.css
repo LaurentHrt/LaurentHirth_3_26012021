@@ -303,15 +303,29 @@ a:nth-child(19) > .carte {
   position: relative;
   margin-bottom: 20px;
   height: 250px;
+  overflow: hidden;
+}
+
+.carte-restaurant:hover .carte-restaurant__photo img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .carte-restaurant__photo {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.carte-restaurant__photo img {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  width: 100%;
-  height: 70%;
 }
 
 .carte-restaurant__nouveau {
@@ -475,8 +489,8 @@ a:nth-child(19) > .carte {
 }
 
 .btn:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-box-shadow: 0 10px 5px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 10px 5px 0px rgba(0, 0, 0, 0.6);
 }
 
 header {

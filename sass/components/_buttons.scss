@@ -6,6 +6,6 @@
 	@include btn-style;
 	transition: 0.2s;
 	&:hover {
-		transform: scale(1.1);
+		box-shadow: $larger-shadow;
 	}
 }
