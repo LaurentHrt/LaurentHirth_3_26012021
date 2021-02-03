@@ -1,35 +1,28 @@
 .list {
 	display: grid;
+	grid-template-columns: 1fr;
+	gap: 15px 15px;
 }
 
 .list-fonction {
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
 	gap: 25px 25px;
 	@include tablet-only {
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr;
 	}
 }
 
 .list-restaurant {
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
 	gap: 20px 20px;
 	@include tablet-only {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
 	}
 	@include desktop-only {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr;
 	}
 }
 
-.list-plat {
-	@include tablet-only {
+.list-menu {
+	@include desktop-only {
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr;
-		gap: 15px 15px;
 	}
 }

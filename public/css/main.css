@@ -399,46 +399,39 @@ a:nth-child(19) > .carte {
 
 .list {
   display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px 15px;
 }
 
 .list-fonction {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   gap: 25px 25px;
 }
 
 @media screen and (min-width: 768px) {
   .list-fonction {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
   }
 }
 
 .list-restaurant {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 20px 20px;
 }
 
 @media screen and (min-width: 768px) {
   .list-restaurant {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .list-restaurant {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .list-plat {
+@media screen and (min-width: 1200px) {
+  .list-menu {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 15px 15px;
   }
 }
 
