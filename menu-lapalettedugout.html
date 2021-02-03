@@ -24,8 +24,13 @@
 			</h1>
 		</header>
 
-		<div class="menu-image-container"><img src="public/img/restaurants/jay-wennington.jpg" alt="Restaurant la palette du gout" /></div>
-
+		<div class="menu-image-container">
+			<picture>
+				<source srcset="public/img/restaurants/2_large/jay-wennington.jpg" media="(min-width: 1200px)" />
+				<source srcset="public/img/restaurants/3_medium/jay-wennington.jpg" media="(min-width: 768px)" />
+				<img src="public/img/restaurants/4_small/jay-wennington.jpg" alt="Restaurant la palette du gout" />
+			</picture>
+		</div>
 		<section class="section menu">
 			<div class="menu__entete">
 				La palette du gôut

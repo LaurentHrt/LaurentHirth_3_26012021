@@ -497,13 +497,6 @@ header .header__arrow i {
   margin-bottom: 20px;
 }
 
-.menu {
-  background-color: #f6f6f6;
-  padding: 30px 15px 50px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-}
-
 footer {
   color: white;
   background-color: #353535;
@@ -552,10 +545,35 @@ footer i {
   height: 35vh;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-image-container {
+    height: 30vw;
+  }
+}
+
 .menu-image-container img {
   object-fit: cover;
   height: 130%;
   width: 100%;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  padding: 30px 15px 50px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 30px 150px 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    padding: 30px 50px 50px;
+  }
 }
 
 .menu__barre-separation {
@@ -570,8 +588,18 @@ footer i {
   font-size: 1.75em;
   display: flex;
   justify-content: space-between;
-  padding-right: 20px;
   align-items: center;
+}
+
+.menu__entete i {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__entete {
+    justify-content: center;
+  }
 }
 
 .menu__entete i:hover {
