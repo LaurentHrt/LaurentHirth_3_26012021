@@ -50,22 +50,15 @@ a:visited {
 
 .spinner-container {
   display: contents;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
   position: fixed;
   background-color: white;
   z-index: 9999;
-  -webkit-animation: eraser 500ms 0s both;
-          animation: eraser 500ms 0s both;
+  animation: eraser 500ms 0s both;
 }
 
 .spinner {
@@ -74,25 +67,8 @@ a:visited {
   width: 300px;
   height: 30px;
   background-color: black;
-  -webkit-animation: spinner 0s 0s backwards;
-          animation: spinner 0s 0s backwards;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-}
-
-@-webkit-keyframes eraser {
-  75% {
-    opacity: 0;
-  }
-  99% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateX(-9999px);
-            transform: translateX(-9999px);
-  }
+  animation: spinner 0s 0s backwards;
+  transform-origin: left;
 }
 
 @keyframes eraser {
@@ -100,184 +76,129 @@ a:visited {
     opacity: 0;
   }
   99% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     opacity: 0;
-    -webkit-transform: translateX(-9999px);
-            transform: translateX(-9999px);
-  }
-}
-
-@-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: translateX(-9999px);
   }
 }
 
 @keyframes spinner {
   0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform: scaleX(0);
   }
   100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
   }
 }
 
 .carte {
-  -webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  -webkit-animation: card-showup 0s 0s both;
-          animation: card-showup 0s 0s both;
+  animation: card-showup 0s 0s both;
 }
 
 a:nth-child(1) > .carte {
-  -webkit-animation-delay: 0.025s;
-          animation-delay: 0.025s;
+  animation-delay: 0.025s;
 }
 
 a:nth-child(2) > .carte {
-  -webkit-animation-delay: 0.05s;
-          animation-delay: 0.05s;
+  animation-delay: 0.05s;
 }
 
 a:nth-child(3) > .carte {
-  -webkit-animation-delay: 0.075s;
-          animation-delay: 0.075s;
+  animation-delay: 0.075s;
 }
 
 a:nth-child(4) > .carte {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 a:nth-child(5) > .carte {
-  -webkit-animation-delay: 0.125s;
-          animation-delay: 0.125s;
+  animation-delay: 0.125s;
 }
 
 a:nth-child(6) > .carte {
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  animation-delay: 0.15s;
 }
 
 a:nth-child(7) > .carte {
-  -webkit-animation-delay: 0.175s;
-          animation-delay: 0.175s;
+  animation-delay: 0.175s;
 }
 
 a:nth-child(8) > .carte {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 a:nth-child(9) > .carte {
-  -webkit-animation-delay: 0.225s;
-          animation-delay: 0.225s;
+  animation-delay: 0.225s;
 }
 
 a:nth-child(10) > .carte {
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
+  animation-delay: 0.25s;
 }
 
 a:nth-child(11) > .carte {
-  -webkit-animation-delay: 0.275s;
-          animation-delay: 0.275s;
+  animation-delay: 0.275s;
 }
 
 a:nth-child(12) > .carte {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 a:nth-child(13) > .carte {
-  -webkit-animation-delay: 0.325s;
-          animation-delay: 0.325s;
+  animation-delay: 0.325s;
 }
 
 a:nth-child(14) > .carte {
-  -webkit-animation-delay: 0.35s;
-          animation-delay: 0.35s;
+  animation-delay: 0.35s;
 }
 
 a:nth-child(15) > .carte {
-  -webkit-animation-delay: 0.375s;
-          animation-delay: 0.375s;
+  animation-delay: 0.375s;
 }
 
 a:nth-child(16) > .carte {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 a:nth-child(17) > .carte {
-  -webkit-animation-delay: 0.425s;
-          animation-delay: 0.425s;
+  animation-delay: 0.425s;
 }
 
 a:nth-child(18) > .carte {
-  -webkit-animation-delay: 0.45s;
-          animation-delay: 0.45s;
+  animation-delay: 0.45s;
 }
 
 a:nth-child(19) > .carte {
-  -webkit-animation-delay: 0.475s;
-          animation-delay: 0.475s;
-}
-
-@-webkit-keyframes card-showup {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
+  animation-delay: 0.475s;
 }
 
 @keyframes card-showup {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(15px);
-            transform: translateY(15px);
+    transform: translateY(15px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
 }
 
 .carte-fonctionnement {
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-weight: 500;
   margin-bottom: 25px;
   margin-left: 12px;
   height: 72px;
   background-color: #f6f6f6;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .carte-fonctionnement:hover {
-  -webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
 }
 
 .carte-fonctionnement:hover {
@@ -289,15 +210,9 @@ a:nth-child(19) > .carte {
 }
 
 .carte-fonctionnement div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: auto 10px;
   position: relative;
   left: -22px;
@@ -315,7 +230,6 @@ a:nth-child(19) > .carte {
 }
 
 .carte-fonctionnement__icone {
-  -webkit-transition: 0.4s;
   transition: 0.4s;
   font-size: 1.25em;
   width: 20px;
@@ -326,18 +240,15 @@ a:nth-child(19) > .carte {
   margin-bottom: 20px;
   height: 250px;
   overflow: hidden;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .carte-restaurant:hover {
-  -webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
 }
 
 .carte-restaurant:hover .carte-restaurant__photo img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .carte-restaurant__photo {
@@ -347,12 +258,10 @@ a:nth-child(19) > .carte {
 }
 
 .carte-restaurant__photo img {
-  -webkit-transition: 0.4s 150ms;
   transition: 0.4s 150ms;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -370,8 +279,7 @@ a:nth-child(19) > .carte {
   padding: 6px 10px;
   border-radius: 2px;
   text-align: center;
-  -webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .carte-restaurant__texte {
@@ -393,7 +301,6 @@ a:nth-child(19) > .carte {
 
 .carte-restaurant__coeur i:hover {
   font-weight: 900;
-  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: transparent;
   background-clip: text;
@@ -402,12 +309,8 @@ a:nth-child(19) > .carte {
 .carte-plat {
   height: 69px;
   margin-bottom: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   overflow: hidden;
 }
 
@@ -416,9 +319,7 @@ a:nth-child(19) > .carte {
   padding: 12px;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .carte-plat__texte__titre {
@@ -444,18 +345,11 @@ a:nth-child(19) > .carte {
   border-top-right-radius: 15px;
   width: 0px;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-transition: width 0.4s ease-in-out;
+  align-items: center;
+  flex-shrink: 0;
   transition: width 0.4s ease-in-out;
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  transform-origin: right;
 }
 
 .carte-plat__selectBtn i {
@@ -466,10 +360,7 @@ a:nth-child(19) > .carte {
 }
 
 .carte-plat__selectBtn i {
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
 .carte-plat:hover .carte-plat__selectBtn {
@@ -477,52 +368,34 @@ a:nth-child(19) > .carte {
 }
 
 .carte-plat:hover .carte-plat__selectBtn i {
-  -webkit-transform: rotate(1turn);
-          transform: rotate(1turn);
+  transform: rotate(1turn);
 }
 
 .btn-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: 50px;
 }
 
 .btn {
-  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 2em;
-  -webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: center;
-      align-self: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
   color: white;
   font-weight: 500;
   height: 50px;
   margin: 13px;
   padding: 0 35px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
-  -webkit-transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .btn:hover {
-  -webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
   opacity: 0.95;
 }
 
@@ -550,15 +423,10 @@ header .header__arrow i {
 }
 
 .localisation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #eaeaea;
-  -webkit-box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
   font-weight: 500;
 }
 
@@ -641,8 +509,7 @@ footer i {
 }
 
 .menu-image-container img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 130%;
   width: 100%;
 }
@@ -657,21 +524,14 @@ footer i {
 .menu__entete {
   font-family: "Shrikhand";
   font-size: 1.75em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-right: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .menu__entete i:hover {
   font-weight: 900;
-  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: transparent;
   background-clip: text;
