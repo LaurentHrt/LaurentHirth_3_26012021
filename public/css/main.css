@@ -5,17 +5,21 @@
   font-family: "Roboto";
   src: url("../polices/Roboto/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Roboto";
   src: url("../polices/Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Shrikhand";
   src: url("../polices/Shrikhand/Shrikhand-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -261,7 +265,7 @@ a:nth-child(19) > .carte {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 25px;
   margin-left: 12px;
   height: 72px;
@@ -336,7 +340,7 @@ a:nth-child(19) > .carte {
   height: 17px;
   background-color: #99e2d0;
   color: #278870;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.9em;
   padding: 6px 10px;
   border-radius: 2px;
@@ -350,7 +354,7 @@ a:nth-child(19) > .carte {
 }
 
 .carte-restaurant__texte__nom {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.1em;
   margin-bottom: 5px;
 }
@@ -390,7 +394,7 @@ a:nth-child(19) > .carte {
 }
 
 .carte-plat__texte__titre {
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 7px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -402,7 +406,7 @@ a:nth-child(19) > .carte {
 }
 
 .carte-plat__prix {
-  font-weight: 400;
+  font-weight: 500;
   padding: 12px 20px 12px 0;
 }
 
@@ -477,7 +481,7 @@ a:nth-child(19) > .carte {
   -ms-flex-item-align: center;
       align-self: center;
   color: white;
-  font-weight: 400;
+  font-weight: 500;
   height: 50px;
   margin: 13px;
   padding: 0 35px;
@@ -526,7 +530,7 @@ header .header__arrow i {
   background-color: #eaeaea;
   -webkit-box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
           box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .localisation__icone {
@@ -542,7 +546,7 @@ header .header__arrow i {
 }
 
 .banniere__texte {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.3em;
 }
 

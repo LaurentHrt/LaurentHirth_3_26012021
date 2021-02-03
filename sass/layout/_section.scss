@@ -7,7 +7,7 @@
 	justify-content: center;
 	background-color: $dark-background;
 	box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
-	font-weight: 400;
+	font-weight: 500;
 	&__icone {
 		margin: auto 0;
 		width: 0;
@@ -20,7 +20,7 @@
 	text-align: center;
 	background-color: $light-background;
 	&__texte {
-		font-weight: 600;
+		font-weight: 500;
 		font-size: 1.3em;
 	}
 }

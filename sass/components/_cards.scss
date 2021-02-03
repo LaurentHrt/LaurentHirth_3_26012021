@@ -22,7 +22,7 @@
 
 .carte-fonctionnement {
 	display: flex;
-	font-weight: 400;
+	font-weight: 500;
 	margin-bottom: 25px;
 	margin-left: 12px;
 	height: 72px;
@@ -84,7 +84,7 @@
 	&__texte {
 		padding: $standard-card-text-padding;
 		&__nom {
-			font-weight: 400;
+			font-weight: 500;
 			font-size: 1.1em;
 			margin-bottom: 5px;
 		}
@@ -117,7 +117,7 @@
 		overflow: hidden;
 		flex-grow: 1;
 		&__titre {
-			font-weight: 400;
+			font-weight: 500;
 			margin-bottom: 7px;
 			overflow: hidden;
 			text-overflow: ellipsis;
@@ -128,7 +128,7 @@
 		}
 	}
 	&__prix {
-		font-weight: 400;
+		font-weight: 500;
 		padding: 12px 20px 12px 0;
 	}
 	&__selectBtn {
