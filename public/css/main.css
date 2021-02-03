@@ -280,6 +280,14 @@ a:nth-child(19) > .carte {
           box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
 }
 
+.carte-fonctionnement:hover {
+  background-color: #f5edff;
+}
+
+.carte-fonctionnement:hover .carte-fonctionnement__icone {
+  color: #9356dc;
+}
+
 .carte-fonctionnement div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,6 +315,8 @@ a:nth-child(19) > .carte {
 }
 
 .carte-fonctionnement__icone {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   font-size: 1.25em;
   width: 20px;
 }
@@ -383,7 +393,10 @@ a:nth-child(19) > .carte {
 
 .carte-restaurant__coeur i:hover {
   font-weight: 900;
-  color: #9356dc;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: transparent;
+  background-clip: text;
 }
 
 .carte-plat {
@@ -658,7 +671,10 @@ footer i {
 
 .menu__entete i:hover {
   font-weight: 900;
-  color: #9356dc;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: transparent;
+  background-clip: text;
 }
 
 .menu__titre {

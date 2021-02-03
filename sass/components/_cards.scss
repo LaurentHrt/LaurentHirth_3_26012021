@@ -30,7 +30,7 @@
 	background-color: $light-background;
 	transition: $standard-transition-time;
 	@include card-hover-style;
-
+	@include card-fonction-hover-style;
 	div {
 		display: flex;
 		justify-content: center;
@@ -50,6 +50,7 @@
 		font-size: 0.9em;
 	}
 	&__icone {
+		transition: $standard-transition-time;
 		font-size: 1.25em;
 		width: 20px;
 	}
@@ -94,11 +95,7 @@
 		right: 25px;
 		bottom: 30px;
 		font-size: 1.3em;
-		i {
-			&:hover {
-				@include heart-hover-style;
-			}
-		}
+		@include heart-hover-style;
 	}
 }
 
