@@ -191,7 +191,6 @@ a:nth-child(19) > .carte {
   cursor: pointer;
   display: flex;
   font-weight: 500;
-  margin-bottom: 25px;
   margin-left: 12px;
   height: 72px;
   background-color: #f6f6f6;
@@ -238,7 +237,6 @@ a:nth-child(19) > .carte {
 
 .carte-restaurant {
   position: relative;
-  margin-bottom: 20px;
   height: 250px;
   overflow: hidden;
   transition: 0.4s;
@@ -309,7 +307,6 @@ a:nth-child(19) > .carte {
 
 .carte-plat {
   height: 69px;
-  margin-bottom: 15px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -400,6 +397,51 @@ a:nth-child(19) > .carte {
   opacity: 0.95;
 }
 
+.list {
+  display: grid;
+}
+
+.list-fonction {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 25px 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-fonction {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.list-restaurant {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-restaurant {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-restaurant {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-plat {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px 15px;
+  }
+}
+
 header {
   text-align: center;
 }
@@ -488,9 +530,17 @@ footer div {
 }
 
 footer ul {
+  display: grid;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  footer ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 footer li {

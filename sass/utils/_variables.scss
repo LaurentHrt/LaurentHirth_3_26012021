@@ -1,3 +1,9 @@
+// Responsive design
+$breakpoints: (
+	"tablet": 768px,
+	"desktop": 1200px,
+);
+
 // Colors
 $dark-background: #eaeaea;
 $light-background: #f6f6f6;

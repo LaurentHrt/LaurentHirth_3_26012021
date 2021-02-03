@@ -24,7 +24,6 @@
 	cursor: pointer;
 	display: flex;
 	font-weight: 500;
-	margin-bottom: 25px;
 	margin-left: 12px;
 	height: 72px;
 	background-color: $light-background;
@@ -58,7 +57,6 @@
 
 .carte-restaurant {
 	position: relative;
-	margin-bottom: 20px;
 	height: 250px;
 	overflow: hidden;
 	transition: $standard-transition-time;
@@ -101,7 +99,6 @@
 
 .carte-plat {
 	height: 69px;
-	margin-bottom: 15px;
 	display: flex;
 	align-items: flex-end;
 	overflow: hidden;
