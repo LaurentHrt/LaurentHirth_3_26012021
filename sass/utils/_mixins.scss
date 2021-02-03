@@ -1,3 +1,5 @@
+// ************* Buttons style ************* //
+
 @mixin btn-style {
 	background: $btn-bg-gradient;
 	border-radius: 2em;
@@ -23,12 +25,15 @@
 @mixin btn-hover-style {
 	transition: $btn-hover-transition;
 	&:hover {
-		box-shadow: $btn-hover-shadow;
-		background: $btn-hover-bg-gradient;
+		box-shadow: $standard-hover-shadow;
+		opacity: 0.95;
 	}
 }
 
 @mixin new-button-style {
+	position: absolute;
+	top: 14px;
+	right: 11px;
 	width: 60px;
 	height: 17px;
 	background-color: $tertiary-color;
@@ -66,15 +71,33 @@
 	}
 }
 
+// ************* Cards style ************* //
+
 @mixin card-style {
 	box-shadow: $standard-shadow;
 	border-radius: $standard-radius;
+}
+
+@mixin card-hover-style {
+	&:hover {
+		box-shadow: $standard-hover-shadow;
+	}
 }
 
 @mixin heart-hover-style {
 	font-weight: 900;
 	color: $primary-color;
 }
+
+@mixin card-restaurant-hover-style {
+	&:hover {
+		.carte-restaurant__photo img {
+			transform: scale(1.1);
+		}
+	}
+}
+
+// ************* Texts style ************* //
 
 @mixin separation-style {
 	height: 3px;
