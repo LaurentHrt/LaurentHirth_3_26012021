@@ -96,6 +96,7 @@ a:visited {
 .carte {
   box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+  background-color: white;
   animation: card-showup 0s 0s both;
 }
 
