@@ -60,8 +60,8 @@ a:visited {
   position: fixed;
   background-color: white;
   z-index: 9999;
-  -webkit-animation: eraser 500ms 4s both;
-          animation: eraser 500ms 4s both;
+  -webkit-animation: eraser 500ms 1500ms both;
+          animation: eraser 500ms 1500ms both;
 }
 
 .spinner {
@@ -70,8 +70,8 @@ a:visited {
   width: 300px;
   height: 30px;
   background-color: black;
-  -webkit-animation: spinner 3s 500ms backwards;
-          animation: spinner 3s 500ms backwards;
+  -webkit-animation: spinner 500ms 500ms backwards;
+          animation: spinner 500ms 500ms backwards;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
@@ -132,103 +132,103 @@ a:visited {
   -webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  -webkit-animation: card-showup 500ms 4s both;
-          animation: card-showup 500ms 4s both;
+  -webkit-animation: card-showup 500ms 1500ms both;
+          animation: card-showup 500ms 1500ms both;
 }
 
 a:nth-child(1) > .carte {
-  -webkit-animation-delay: 4.025s;
-          animation-delay: 4.025s;
+  -webkit-animation-delay: 1525ms;
+          animation-delay: 1525ms;
 }
 
 a:nth-child(2) > .carte {
-  -webkit-animation-delay: 4.05s;
-          animation-delay: 4.05s;
+  -webkit-animation-delay: 1550ms;
+          animation-delay: 1550ms;
 }
 
 a:nth-child(3) > .carte {
-  -webkit-animation-delay: 4.075s;
-          animation-delay: 4.075s;
+  -webkit-animation-delay: 1575ms;
+          animation-delay: 1575ms;
 }
 
 a:nth-child(4) > .carte {
-  -webkit-animation-delay: 4.1s;
-          animation-delay: 4.1s;
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
 }
 
 a:nth-child(5) > .carte {
-  -webkit-animation-delay: 4.125s;
-          animation-delay: 4.125s;
+  -webkit-animation-delay: 1625ms;
+          animation-delay: 1625ms;
 }
 
 a:nth-child(6) > .carte {
-  -webkit-animation-delay: 4.15s;
-          animation-delay: 4.15s;
+  -webkit-animation-delay: 1650ms;
+          animation-delay: 1650ms;
 }
 
 a:nth-child(7) > .carte {
-  -webkit-animation-delay: 4.175s;
-          animation-delay: 4.175s;
+  -webkit-animation-delay: 1675ms;
+          animation-delay: 1675ms;
 }
 
 a:nth-child(8) > .carte {
-  -webkit-animation-delay: 4.2s;
-          animation-delay: 4.2s;
+  -webkit-animation-delay: 1700ms;
+          animation-delay: 1700ms;
 }
 
 a:nth-child(9) > .carte {
-  -webkit-animation-delay: 4.225s;
-          animation-delay: 4.225s;
+  -webkit-animation-delay: 1725ms;
+          animation-delay: 1725ms;
 }
 
 a:nth-child(10) > .carte {
-  -webkit-animation-delay: 4.25s;
-          animation-delay: 4.25s;
+  -webkit-animation-delay: 1750ms;
+          animation-delay: 1750ms;
 }
 
 a:nth-child(11) > .carte {
-  -webkit-animation-delay: 4.275s;
-          animation-delay: 4.275s;
+  -webkit-animation-delay: 1775ms;
+          animation-delay: 1775ms;
 }
 
 a:nth-child(12) > .carte {
-  -webkit-animation-delay: 4.3s;
-          animation-delay: 4.3s;
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
 }
 
 a:nth-child(13) > .carte {
-  -webkit-animation-delay: 4.325s;
-          animation-delay: 4.325s;
+  -webkit-animation-delay: 1825ms;
+          animation-delay: 1825ms;
 }
 
 a:nth-child(14) > .carte {
-  -webkit-animation-delay: 4.35s;
-          animation-delay: 4.35s;
+  -webkit-animation-delay: 1850ms;
+          animation-delay: 1850ms;
 }
 
 a:nth-child(15) > .carte {
-  -webkit-animation-delay: 4.375s;
-          animation-delay: 4.375s;
+  -webkit-animation-delay: 1875ms;
+          animation-delay: 1875ms;
 }
 
 a:nth-child(16) > .carte {
-  -webkit-animation-delay: 4.4s;
-          animation-delay: 4.4s;
+  -webkit-animation-delay: 1900ms;
+          animation-delay: 1900ms;
 }
 
 a:nth-child(17) > .carte {
-  -webkit-animation-delay: 4.425s;
-          animation-delay: 4.425s;
+  -webkit-animation-delay: 1925ms;
+          animation-delay: 1925ms;
 }
 
 a:nth-child(18) > .carte {
-  -webkit-animation-delay: 4.45s;
-          animation-delay: 4.45s;
+  -webkit-animation-delay: 1950ms;
+          animation-delay: 1950ms;
 }
 
 a:nth-child(19) > .carte {
-  -webkit-animation-delay: 4.475s;
-          animation-delay: 4.475s;
+  -webkit-animation-delay: 1975ms;
+          animation-delay: 1975ms;
 }
 
 @-webkit-keyframes card-showup {
@@ -562,7 +562,6 @@ header .header__arrow i {
 
 .menu {
   background-color: #f6f6f6;
-  margin-top: 220px;
   padding: 30px 15px 50px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -602,36 +601,17 @@ footer i {
   width: 22px;
 }
 
-.body-lapalettedugout {
-  background-image: url("../../public/img/restaurants/jay-wennington.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto 320px;
-  background-attachment: fixed;
+.menu-image-container {
+  position: relative;
+  z-index: -1;
+  height: 35vh;
 }
 
-.body-alafrancaise {
-  background-image: url("../../public/img/restaurants/toa-heftiba.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto 320px;
-  background-attachment: fixed;
-}
-
-.body-lanoteenchantee {
-  background-image: url("../../public/img/restaurants/stil.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto 320px;
-  background-attachment: fixed;
-}
-
-.body-ledelicedessens {
-  background-image: url("../../public/img/restaurants/louis-hansel.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto 320px;
-  background-attachment: fixed;
+.menu-image-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 130%;
+  width: 100%;
 }
 
 .menu__barre-separation {
