@@ -1,3 +1,4 @@
+// Colors
 $dark-background: #eaeaea;
 $light-background: #f6f6f6;
 $footer-background: #353535;
@@ -6,15 +7,25 @@ $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 $text-color: #353535;
+$check-btn-color: #6ab9a5;
 
 $standard-radius: 15px;
 $small-radius: 2px;
 $big-radius: 40px;
 
 $standard-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+$larger-shadow: 0 10px 5px 0px rgba(0, 0, 0, 0.6);
 
-$standard-card-text-padding: 12px 20px 12px 12px;
-
-$menu-page-background-spacing: 220px;
+$standard-card-text-padding: 12px;
 
 $carte-plat-height: 45px;
+
+$standard-transition-time: 0.4s;
+
+// Animations
+$spinner-duration: 500ms;
+$spinner-offset: 500ms;
+$card-showup-duration: 500ms;
+$card-showup-offset: 1000ms;
+$cardCount: 20;
+$card-showup-delay: $card-showup-duration / $cardCount;

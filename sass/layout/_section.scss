@@ -6,13 +6,13 @@
 	display: flex;
 	justify-content: center;
 	background-color: $dark-background;
-	height: 50px;
-	margin: auto;
 	box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
 	font-weight: 400;
 	&__icone {
-		position: absolute;
-		left: 6.5em;
+		margin: auto 0;
+		width: 0;
+		position: relative;
+		right: 40px;
 	}
 }
 
@@ -42,7 +42,6 @@
 
 .menu {
 	background-color: $light-background;
-	margin-top: $menu-page-background-spacing;
 	padding: 30px 15px 50px;
 	border-top-left-radius: $big-radius;
 	border-top-right-radius: $big-radius;

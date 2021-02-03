@@ -1,14 +1,12 @@
-.body-lapalettedugout {
-	@include menu-bg-image("../../public/img/restaurants/jay-wennington.jpg");
-}
-.body-alafrancaise {
-	@include menu-bg-image("../../public/img/restaurants/toa-heftiba.jpg");
-}
-.body-lanoteenchantee {
-	@include menu-bg-image("../../public/img/restaurants/stil.jpg");
-}
-.body-ledelicedessens {
-	@include menu-bg-image("../../public/img/restaurants/louis-hansel.jpg");
+.menu-image-container {
+	position: relative;
+	z-index: -1;
+	height: 35vh;
+	img {
+		object-fit: cover;
+		height: 130%;
+		width: 100%;
+	}
 }
 
 .menu {
@@ -17,6 +15,9 @@
 	}
 	&__entete {
 		@include restaurant-title-style;
+		& i:hover {
+			@include heart-hover-style;
+		}
 	}
 	&__titre {
 		@include menu-title-style;

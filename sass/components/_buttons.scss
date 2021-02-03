@@ -4,4 +4,8 @@
 
 .btn {
 	@include btn-style;
+	transition: 0.2s;
+	&:hover {
+		box-shadow: $larger-shadow;
+	}
 }
