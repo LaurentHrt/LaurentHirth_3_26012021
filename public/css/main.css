@@ -64,8 +64,8 @@ a:visited {
   position: fixed;
   background-color: white;
   z-index: 9999;
-  -webkit-animation: eraser 500ms 1500ms both;
-          animation: eraser 500ms 1500ms both;
+  -webkit-animation: eraser 500ms 0s both;
+          animation: eraser 500ms 0s both;
 }
 
 .spinner {
@@ -74,8 +74,8 @@ a:visited {
   width: 300px;
   height: 30px;
   background-color: black;
-  -webkit-animation: spinner 500ms 500ms backwards;
-          animation: spinner 500ms 500ms backwards;
+  -webkit-animation: spinner 0s 0s backwards;
+          animation: spinner 0s 0s backwards;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
@@ -136,103 +136,103 @@ a:visited {
   -webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
-  -webkit-animation: card-showup 500ms 1500ms both;
-          animation: card-showup 500ms 1500ms both;
+  -webkit-animation: card-showup 0s 0s both;
+          animation: card-showup 0s 0s both;
 }
 
 a:nth-child(1) > .carte {
-  -webkit-animation-delay: 1525ms;
-          animation-delay: 1525ms;
+  -webkit-animation-delay: 0.025s;
+          animation-delay: 0.025s;
 }
 
 a:nth-child(2) > .carte {
-  -webkit-animation-delay: 1550ms;
-          animation-delay: 1550ms;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
 }
 
 a:nth-child(3) > .carte {
-  -webkit-animation-delay: 1575ms;
-          animation-delay: 1575ms;
+  -webkit-animation-delay: 0.075s;
+          animation-delay: 0.075s;
 }
 
 a:nth-child(4) > .carte {
-  -webkit-animation-delay: 1600ms;
-          animation-delay: 1600ms;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 a:nth-child(5) > .carte {
-  -webkit-animation-delay: 1625ms;
-          animation-delay: 1625ms;
+  -webkit-animation-delay: 0.125s;
+          animation-delay: 0.125s;
 }
 
 a:nth-child(6) > .carte {
-  -webkit-animation-delay: 1650ms;
-          animation-delay: 1650ms;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
 }
 
 a:nth-child(7) > .carte {
-  -webkit-animation-delay: 1675ms;
-          animation-delay: 1675ms;
+  -webkit-animation-delay: 0.175s;
+          animation-delay: 0.175s;
 }
 
 a:nth-child(8) > .carte {
-  -webkit-animation-delay: 1700ms;
-          animation-delay: 1700ms;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 a:nth-child(9) > .carte {
-  -webkit-animation-delay: 1725ms;
-          animation-delay: 1725ms;
+  -webkit-animation-delay: 0.225s;
+          animation-delay: 0.225s;
 }
 
 a:nth-child(10) > .carte {
-  -webkit-animation-delay: 1750ms;
-          animation-delay: 1750ms;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
 a:nth-child(11) > .carte {
-  -webkit-animation-delay: 1775ms;
-          animation-delay: 1775ms;
+  -webkit-animation-delay: 0.275s;
+          animation-delay: 0.275s;
 }
 
 a:nth-child(12) > .carte {
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 a:nth-child(13) > .carte {
-  -webkit-animation-delay: 1825ms;
-          animation-delay: 1825ms;
+  -webkit-animation-delay: 0.325s;
+          animation-delay: 0.325s;
 }
 
 a:nth-child(14) > .carte {
-  -webkit-animation-delay: 1850ms;
-          animation-delay: 1850ms;
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
 }
 
 a:nth-child(15) > .carte {
-  -webkit-animation-delay: 1875ms;
-          animation-delay: 1875ms;
+  -webkit-animation-delay: 0.375s;
+          animation-delay: 0.375s;
 }
 
 a:nth-child(16) > .carte {
-  -webkit-animation-delay: 1900ms;
-          animation-delay: 1900ms;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 a:nth-child(17) > .carte {
-  -webkit-animation-delay: 1925ms;
-          animation-delay: 1925ms;
+  -webkit-animation-delay: 0.425s;
+          animation-delay: 0.425s;
 }
 
 a:nth-child(18) > .carte {
-  -webkit-animation-delay: 1950ms;
-          animation-delay: 1950ms;
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
 }
 
 a:nth-child(19) > .carte {
-  -webkit-animation-delay: 1975ms;
-          animation-delay: 1975ms;
+  -webkit-animation-delay: 0.475s;
+          animation-delay: 0.475s;
 }
 
 @-webkit-keyframes card-showup {
@@ -464,8 +464,8 @@ a:nth-child(19) > .carte {
 }
 
 .btn {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 2em;
   -webkit-box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
@@ -488,13 +488,15 @@ a:nth-child(19) > .carte {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .btn:hover {
-  -webkit-box-shadow: 0 10px 5px 0px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 10px 5px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px rgba(0, 0, 0, 0.25), 0px 3px 14px 2px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff83dd), to(#985ede));
+  background: linear-gradient(to bottom right, #ff83dd, #985ede);
 }
 
 header {
