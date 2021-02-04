@@ -25,8 +25,8 @@ footer {
 		margin: 0;
 		padding: 0;
 		@include tablet-only {
-			grid-template-columns: 1fr 1fr 1fr 1fr;
-			grid-template-rows: 1fr;
+			grid-temmeale-columns: 1fr 1fr 1fr 1fr;
+			grid-temmeale-rows: 1fr;
 		}
 		@include desktop-only {
 			margin: auto;

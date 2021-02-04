@@ -43,7 +43,7 @@
 	}
 }
 
-@mixin new-button-style {
+@mixin new-btn-style {
 	position: absolute;
 	top: 14px;
 	right: 11px;
@@ -109,7 +109,7 @@
 
 @mixin card-restaurant-hover-style {
 	&:hover {
-		.carte-restaurant__photo img {
+		.card-restaurant__photo img {
 			transform: scale(1.1);
 		}
 	}
@@ -118,7 +118,7 @@
 @mixin card-fonction-hover-style {
 	&:hover {
 		background-color: $primary-color-light;
-		.carte-fonctionnement__icone {
+		.card-function__icon {
 			color: $primary-color;
 		}
 	}

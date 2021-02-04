@@ -1,10 +1,10 @@
-.carte {
+.card {
 	@include card-style;
 	animation: card-showup $card-showup-duration $spinner-duration + $spinner-offset * 2 both;
 }
 
 @for $i from 1 to $cardCount {
-	a:nth-child(#{$i}) > .carte {
+	a:nth-child(#{$i}) > .card {
 		animation-delay: $spinner-duration + $card-showup-offset + ($card-showup-delay * $i);
 	}
 }
@@ -20,7 +20,7 @@
 	}
 }
 
-.carte-fonctionnement {
+.card-function {
 	cursor: pointer;
 	display: flex;
 	font-weight: 500;
@@ -39,7 +39,7 @@
 		left: -22px;
 		top: 3px;
 	}
-	&__numero {
+	&__num {
 		background-color: $primary-color;
 		color: white;
 		border-radius: 50%;
@@ -48,14 +48,14 @@
 		text-align: center;
 		font-size: 0.9em;
 	}
-	&__icone {
+	&__icon {
 		transition: $standard-transition-time;
 		font-size: 1.25em;
 		width: 20px;
 	}
 }
 
-.carte-restaurant {
+.card-restaurant {
 	position: relative;
 	height: 250px;
 	overflow: hidden;
@@ -75,20 +75,20 @@
 			border-top-right-radius: $standard-radius;
 		}
 	}
-	&__nouveau {
-		@include new-button-style;
+	&__new {
+		@include new-btn-style;
 	}
-	&__texte {
+	&__text {
 		padding: $standard-card-text-padding;
-		&__nom {
+		&__name {
 			font-weight: 500;
 			font-size: 1.1em;
 			margin-bottom: 5px;
 		}
-		&__lieu {
+		&__location {
 		}
 	}
-	&__coeur {
+	&__heart {
 		position: absolute;
 		right: 25px;
 		bottom: 30px;
@@ -97,18 +97,18 @@
 	}
 }
 
-.carte-plat {
+.card-meal {
 	height: 69px;
 	display: flex;
 	align-items: flex-end;
 	overflow: hidden;
-	&__texte {
-		height: $carte-plat-height;
+	&__text {
+		height: $card-meal-height;
 		padding: $standard-card-text-padding;
 		white-space: nowrap;
 		overflow: hidden;
 		flex-grow: 1;
-		&__titre {
+		&__title {
 			font-weight: 500;
 			margin-bottom: 7px;
 			overflow: hidden;
@@ -119,7 +119,7 @@
 			text-overflow: ellipsis;
 		}
 	}
-	&__prix {
+	&__price {
 		font-weight: 500;
 		padding: 12px 20px 12px 0;
 	}
@@ -128,7 +128,7 @@
 		@include selectBtn-transition;
 	}
 	&:hover {
-		& .carte-plat__selectBtn {
+		& .card-meal__selectBtn {
 			width: 59px;
 			i {
 				transform: rotate(1turn);
