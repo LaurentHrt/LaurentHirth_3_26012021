@@ -13,7 +13,7 @@
 	<body>
 		<div class="spinner-container"><div class="spinner"></div></div>
 
-		<header>
+		<header class="flex-column">
 			<a href="./index.html">
 				<div class="header__arrow">
 					<i class="fas fa-arrow-left"></i>
@@ -24,7 +24,13 @@
 			</h1>
 		</header>
 
-		<div class="menu-image-container"><img src="public/img/restaurants/toa-heftiba.jpg" alt="Restaurant a la francaise" /></div>
+		<div class="menu-image-container">
+			<picture>
+				<source srcset="public/img/restaurants/2_large/toa-heftiba.jpg" media="(min-width: 1200px)" />
+				<source srcset="public/img/restaurants/3_medium/toa-heftiba.jpg" media="(min-width: 768px)" />
+				<img src="public/img/restaurants/4_small/toa-heftiba.jpg" alt="Restaurant a la francaise" />
+			</picture>
+		</div>
 
 		<section class="section menu">
 			<div class="menu__entete">
@@ -32,103 +38,118 @@
 				<a href=""><i class="far fa-heart"></i></a>
 			</div>
 
-			<div class="menu__titre">Entrées</div>
-			<div class="menu__barre-separation"></div>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Tartare de poule acidulé</div>
-						<div class="carte-plat__texte__description">Au zeste d'orange</div>
+			<div class="list list-menu">
+				<div>
+					<div class="menu__titre">Entrées</div>
+					<div class="menu__barre-separation"></div>
+					<div class="list list-plat">
+						<a href="">
+							<div class="carte carte-plat">
+								<div class="carte-plat__texte">
+									<div class="carte-plat__texte__titre">Tartare de poule acidulé</div>
+									<div class="carte-plat__texte__description">Au zeste d'orange</div>
+								</div>
+								<div class="carte-plat__prix">25€</div>
+								<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
+							</div>
+						</a>
+						<a href="">
+							<div class="carte carte-plat">
+								<div class="carte-plat__texte">
+									<div class="carte-plat__texte__titre">Velouté de légumes d'antan</div>
+									<div class="carte-plat__texte__description">Carotte, panais, topinambour</div>
+								</div>
+								<div class="carte-plat__prix">35€</div>
+								<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
+							</div>
+						</a>
+						<a href="">
+							<div class="carte carte-plat">
+								<div class="carte-plat__texte">
+									<div class="carte-plat__texte__titre">Soupe à l'oignon</div>
+									<div class="carte-plat__texte__description">Revisitée</div>
+								</div>
+								<div class="carte-plat__prix">20€</div>
+								<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
+							</div>
+						</a>
 					</div>
-					<div class="carte-plat__prix">25€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
 				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Velouté de légumes d'antan</div>
-						<div class="carte-plat__texte__description">Carotte, panais, topinambour</div>
-					</div>
-					<div class="carte-plat__prix">35€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Soupe à l'oignon</div>
-						<div class="carte-plat__texte__description">Revisitée</div>
-					</div>
-					<div class="carte-plat__prix">20€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
 
-			<div class="menu__titre">Plats</div>
-			<div class="menu__barre-separation"></div>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Coquilles Saint-Jacques</div>
-						<div class="carte-plat__texte__description">Accompagnée d'une purée de panais</div>
+				<div>
+					<div class="menu__titre">Plats</div>
+					<div class="menu__barre-separation"></div>
+					<div class="list list-plat">
+						<a href="">
+							<div class="carte carte-plat">
+								<div class="carte-plat__texte">
+									<div class="carte-plat__texte__titre">Coquilles Saint-Jacques</div>
+									<div class="carte-plat__texte__description">Accompagnée d'une purée de panais</div>
+								</div>
+								<div class="carte-plat__prix">40€</div>
+								<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
+							</div>
+						</a>
+						<a href="">
+							<div class="carte carte-plat">
+								<div class="carte-plat__texte">
+									<div class="carte-plat__texte__titre">Magret de canard</div>
+									<div class="carte-plat__texte__description">Et parmentier de pommes de terre</div>
+								</div>
+								<div class="carte-plat__prix">35€</div>
+								<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
+							</div>
+						</a>
+						<a href="">
+							<div class="carte carte-plat">
+								<div class="carte-plat__texte">
+									<div class="carte-plat__texte__titre">Pigeonneau d'Ille-et-Vilaine</div>
+									<div class="carte-plat__texte__description">Sur son lit de gnocchis aux légumes</div>
+								</div>
+								<div class="carte-plat__prix">44€</div>
+								<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
+							</div>
+						</a>
 					</div>
-					<div class="carte-plat__prix">40€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
 				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Magret de canard</div>
-						<div class="carte-plat__texte__description">Et parmentier de pommes de terre</div>
-					</div>
-					<div class="carte-plat__prix">35€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Pigeonneau d'Ille-et-Vilaine</div>
-						<div class="carte-plat__texte__description">Sur son lit de gnocchis aux légumes</div>
-					</div>
-					<div class="carte-plat__prix">44€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
 
-			<div class="menu__titre">Desserts</div>
-			<div class="menu__barre-separation"></div>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Pétales de violettes glacés</div>
-						<div class="carte-plat__texte__description">Et purée de noisette</div>
+				<div>
+					<div class="menu__titre">Desserts</div>
+					<div class="menu__barre-separation"></div>
+					<div class="list list-plat">
+						<a href="">
+							<div class="carte carte-plat">
+								<div class="carte-plat__texte">
+									<div class="carte-plat__texte__titre">Pétales de violettes glacés</div>
+									<div class="carte-plat__texte__description">Et purée de noisette</div>
+								</div>
+								<div class="carte-plat__prix">18€</div>
+								<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
+							</div>
+						</a>
+						<a href="">
+							<div class="carte carte-plat">
+								<div class="carte-plat__texte">
+									<div class="carte-plat__texte__titre">Fondant au chocolat</div>
+									<div class="carte-plat__texte__description">Revisité</div>
+								</div>
+								<div class="carte-plat__prix">22€</div>
+								<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
+							</div>
+						</a>
+						<a href="">
+							<div class="carte carte-plat">
+								<div class="carte-plat__texte">
+									<div class="carte-plat__texte__titre">Millefeuille croustillant</div>
+									<div class="carte-plat__texte__description">Myrtilles et pâte d'amande</div>
+								</div>
+								<div class="carte-plat__prix">23€</div>
+								<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
+							</div>
+						</a>
 					</div>
-					<div class="carte-plat__prix">18€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
 				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Fondant au chocolat</div>
-						<div class="carte-plat__texte__description">Revisité</div>
-					</div>
-					<div class="carte-plat__prix">22€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Millefeuille croustillant</div>
-						<div class="carte-plat__texte__description">Myrtilles et pâte d'amande</div>
-					</div>
-					<div class="carte-plat__prix">23€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div></div
-			></a>
+			</div>
 
 			<div class="btn-container">
 				<a href=""><div class="btn">Commander</div></a>
@@ -136,8 +157,8 @@
 		</section>
 
 		<footer>
-			<div>ohmyfood</div>
-			<ul>
+			<div class="footer__title">ohmyfood</div>
+			<ul class="footer__links">
 				<li>
 					<a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a>
 				</li>

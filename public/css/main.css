@@ -48,6 +48,10 @@ a:visited {
   display: contents;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .spinner-container {
   display: contents;
   display: flex;
@@ -191,7 +195,6 @@ a:nth-child(19) > .carte {
   cursor: pointer;
   display: flex;
   font-weight: 500;
-  margin-bottom: 25px;
   margin-left: 12px;
   height: 72px;
   background-color: #f6f6f6;
@@ -238,7 +241,6 @@ a:nth-child(19) > .carte {
 
 .carte-restaurant {
   position: relative;
-  margin-bottom: 20px;
   height: 250px;
   overflow: hidden;
   transition: 0.4s;
@@ -309,7 +311,6 @@ a:nth-child(19) > .carte {
 
 .carte-plat {
   height: 69px;
-  margin-bottom: 15px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -400,13 +401,53 @@ a:nth-child(19) > .carte {
   opacity: 0.95;
 }
 
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px 15px;
+}
+
+.list-fonction {
+  gap: 25px 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-fonction {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.list-restaurant {
+  gap: 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-restaurant {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-restaurant {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-menu {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 header {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
 header .header__logo img {
   width: 165px;
-  padding: 21px 20px 10px;
+  padding: 21px 0 10px;
 }
 
 header .header__arrow {
@@ -419,13 +460,20 @@ header .header__arrow i {
   font-size: 20px;
 }
 
-.section {
-  padding: 39px 20px 50px;
+@media screen and (min-width: 1200px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto auto;
+    padding: 0 100px;
+    max-width: 1400px;
+  }
 }
 
 .localisation {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #eaeaea;
   box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
   font-weight: 500;
@@ -438,6 +486,25 @@ header .header__arrow i {
   right: 40px;
 }
 
+@media screen and (min-width: 1200px) {
+  .localisation {
+    background-color: initial;
+    box-shadow: none;
+  }
+}
+
+.section {
+  padding: 39px 20px 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section > * {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1400px;
+  }
+}
+
 .banniere {
   text-align: center;
   background-color: #f6f6f6;
@@ -446,6 +513,12 @@ header .header__arrow i {
 .banniere__texte {
   font-weight: 500;
   font-size: 1.3em;
+}
+
+@media screen and (min-width: 1200px) {
+  .banniere {
+    box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .fonctionnement h1 {
@@ -462,17 +535,10 @@ header .header__arrow i {
   margin-bottom: 20px;
 }
 
-.menu {
-  background-color: #f6f6f6;
-  padding: 30px 15px 50px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-}
-
 footer {
   color: white;
   background-color: #353535;
-  padding: 20px 20px 30px 20px;
+  padding: 20px 20px 30px;
 }
 
 footer a,
@@ -480,25 +546,53 @@ footer a:visited {
   color: white;
 }
 
-footer div {
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 30px 50px;
+  }
+}
+
+footer .footer__title {
   font-family: "Shrikhand";
   font-size: larger;
   margin-bottom: 18px;
   margin-left: 4px;
 }
 
-footer ul {
+@media screen and (min-width: 1200px) {
+  footer .footer__title {
+    margin: 0 auto 18px;
+    max-width: 1400px;
+  }
+}
+
+footer .footer__links {
+  display: grid;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-footer li {
+@media screen and (min-width: 768px) {
+  footer .footer__links {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer .footer__links {
+    margin: auto;
+    max-width: 1400px;
+  }
+}
+
+footer .footer__links li {
   margin-bottom: 7px;
   margin-left: 5px;
 }
 
-footer i {
+footer .footer__links i {
   font-size: 13px;
   width: 22px;
 }
@@ -509,10 +603,41 @@ footer i {
   height: 35vh;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-image-container {
+    height: 30vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-image-container {
+    max-height: 420px;
+  }
+}
+
 .menu-image-container img {
   object-fit: cover;
   height: 130%;
   width: 100%;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  padding: 30px 15px 50px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 30px 150px 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    padding: 30px 50px 50px;
+  }
 }
 
 .menu__barre-separation {
@@ -527,8 +652,18 @@ footer i {
   font-size: 1.75em;
   display: flex;
   justify-content: space-between;
-  padding-right: 20px;
   align-items: center;
+}
+
+.menu__entete i {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__entete {
+    justify-content: center;
+  }
 }
 
 .menu__entete i:hover {

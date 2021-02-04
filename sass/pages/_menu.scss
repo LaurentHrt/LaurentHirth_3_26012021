@@ -2,6 +2,12 @@
 	position: relative;
 	z-index: -1;
 	height: 35vh;
+	@include tablet-only {
+		height: 30vw;
+	}
+	@include desktop-only {
+		max-height: 420px;
+	}
 	img {
 		object-fit: cover;
 		height: 130%;
@@ -10,6 +16,16 @@
 }
 
 .menu {
+	background-color: $light-background;
+	padding: 30px 15px 50px;
+	border-top-left-radius: $big-radius;
+	border-top-right-radius: $big-radius;
+	@include tablet-only {
+		padding: 30px 150px 50px;
+	}
+	@include desktop-only {
+		padding: 30px 50px 50px;
+	}
 	&__barre-separation {
 		@include separation-style;
 	}
