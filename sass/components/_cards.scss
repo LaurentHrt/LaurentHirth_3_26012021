@@ -1,23 +1,6 @@
 .card {
 	@include card-style;
-	animation: card-showup $card-showup-duration $spinner-duration + $spinner-offset * 2 both;
-}
-
-@for $i from 1 to $cardCount {
-	a:nth-child(#{$i}) > .card {
-		animation-delay: $spinner-duration + $card-showup-offset + ($card-showup-delay * $i);
-	}
-}
-
-@keyframes card-showup {
-	0% {
-		opacity: 0;
-		transform: translateY(15px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px);
-	}
+	animation: card-showup $card-showup-duration $content-showup-offset cubic-bezier(0.3, 0.12, 0.22, 0.99) both;
 }
 
 .card-function {
@@ -102,6 +85,14 @@
 	display: flex;
 	align-items: flex-end;
 	overflow: hidden;
+	cursor: pointer;
+
+	@for $i from 1 to $cardCount {
+		&:nth-child(#{$i}) {
+			animation-delay: $content-showup-offset + ($card-showup-delay * $i);
+		}
+	}
+
 	&__text {
 		height: $card-meal-height;
 		padding: $standard-card-text-padding;
@@ -134,5 +125,16 @@
 				transform: rotate(1turn);
 			}
 		}
+	}
+}
+
+@keyframes card-showup {
+	0% {
+		opacity: 0;
+		transform: translateY(15px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
 	}
 }

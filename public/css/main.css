@@ -53,7 +53,6 @@ a:visited {
 }
 
 .spinner-container {
-  display: contents;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +61,7 @@ a:visited {
   position: fixed;
   background-color: white;
   z-index: 9999;
-  animation: eraser 500ms 0s both;
+  animation: eraser 500ms 3.9s both;
 }
 
 .spinner {
@@ -71,7 +70,7 @@ a:visited {
   width: 300px;
   height: 30px;
   background-color: black;
-  animation: spinner 0s 0s backwards;
+  animation: spinner 3s 500ms backwards;
   transform-origin: left;
 }
 
@@ -101,94 +100,7 @@ a:visited {
   box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   background-color: white;
-  animation: card-showup 0s 0s both;
-}
-
-a:nth-child(1) > .card {
-  animation-delay: 0.025s;
-}
-
-a:nth-child(2) > .card {
-  animation-delay: 0.05s;
-}
-
-a:nth-child(3) > .card {
-  animation-delay: 0.075s;
-}
-
-a:nth-child(4) > .card {
-  animation-delay: 0.1s;
-}
-
-a:nth-child(5) > .card {
-  animation-delay: 0.125s;
-}
-
-a:nth-child(6) > .card {
-  animation-delay: 0.15s;
-}
-
-a:nth-child(7) > .card {
-  animation-delay: 0.175s;
-}
-
-a:nth-child(8) > .card {
-  animation-delay: 0.2s;
-}
-
-a:nth-child(9) > .card {
-  animation-delay: 0.225s;
-}
-
-a:nth-child(10) > .card {
-  animation-delay: 0.25s;
-}
-
-a:nth-child(11) > .card {
-  animation-delay: 0.275s;
-}
-
-a:nth-child(12) > .card {
-  animation-delay: 0.3s;
-}
-
-a:nth-child(13) > .card {
-  animation-delay: 0.325s;
-}
-
-a:nth-child(14) > .card {
-  animation-delay: 0.35s;
-}
-
-a:nth-child(15) > .card {
-  animation-delay: 0.375s;
-}
-
-a:nth-child(16) > .card {
-  animation-delay: 0.4s;
-}
-
-a:nth-child(17) > .card {
-  animation-delay: 0.425s;
-}
-
-a:nth-child(18) > .card {
-  animation-delay: 0.45s;
-}
-
-a:nth-child(19) > .card {
-  animation-delay: 0.475s;
-}
-
-@keyframes card-showup {
-  0% {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+  animation: card-showup 500ms 4s cubic-bezier(0.3, 0.12, 0.22, 0.99) both;
 }
 
 .card-function {
@@ -318,6 +230,19 @@ a:nth-child(19) > .card {
   display: flex;
   align-items: flex-end;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.card-meal:nth-child(1) {
+  animation-delay: 4.1s;
+}
+
+.card-meal:nth-child(2) {
+  animation-delay: 4.2s;
+}
+
+.card-meal:nth-child(3) {
+  animation-delay: 4.3s;
 }
 
 .card-meal__text {
@@ -377,6 +302,17 @@ a:nth-child(19) > .card {
   transform: rotate(1turn);
 }
 
+@keyframes card-showup {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -407,7 +343,7 @@ a:nth-child(19) > .card {
 
 .list {
   display: grid;
-  grid-temmeale-columns: 1fr;
+  grid-template-columns: 1fr;
   gap: 15px 15px;
 }
 
@@ -417,7 +353,7 @@ a:nth-child(19) > .card {
 
 @media screen and (min-width: 768px) {
   .list-fonction {
-    grid-temmeale-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -427,19 +363,19 @@ a:nth-child(19) > .card {
 
 @media screen and (min-width: 768px) {
   .list-restaurant {
-    grid-temmeale-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .list-restaurant {
-    grid-temmeale-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .list-menu {
-    grid-temmeale-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -644,13 +580,6 @@ footer .footer__links i {
   }
 }
 
-.menu__separation-bar {
-  height: 3px;
-  width: 40px;
-  background-color: #99e2d0;
-  margin-bottom: 13px;
-}
-
 .menu__header {
   font-family: "Shrikhand";
   font-size: 1.75em;
@@ -681,5 +610,33 @@ footer .footer__links i {
   text-transform: uppercase;
   margin-bottom: 5px;
   margin-top: 22px;
+  animation: title-entrance 0.4s 4s cubic-bezier(0.41, 0, 0.04, 1) both;
+}
+
+.menu__separation-bar {
+  height: 3px;
+  width: 40px;
+  background-color: #99e2d0;
+  margin-bottom: 13px;
+  animation: separation-bar-entrance 0.4s 4.5s cubic-bezier(0.57, 0.02, 0.34, 1.27) both;
+  transform-origin: left;
+}
+
+@keyframes title-entrance {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes separation-bar-entrance {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -102,7 +102,7 @@
 }
 
 @mixin heart-hover-style {
-	& i:hover {
+	i:hover {
 		font-weight: 900;
 		background: $btn-bg-gradient;
 		color: transparent;

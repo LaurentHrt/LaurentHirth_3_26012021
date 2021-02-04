@@ -29,9 +29,9 @@ $standard-transition-style: $standard-transition-time cubic-bezier(0.4, 0, 0.2, 
 $spinner-duration: 3s;
 $spinner-offset: 500ms;
 $card-showup-duration: 500ms;
-$card-showup-offset: 1000ms;
-$cardCount: 20;
-$card-showup-delay: $card-showup-duration / $cardCount;
+$content-showup-offset: $spinner-duration + $spinner-offset + 500ms;
+$cardCount: 4;
+$card-showup-delay: 100ms;
 
 // Buttons
 $btn-bg-gradient: linear-gradient(to bottom right, $secondary-color, $primary-color);
@@ -44,9 +44,3 @@ $standard-hover-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.28), 0px 8px 10px 1px r
 // Margins, sizes and positions
 $standard-card-text-padding: 12px;
 $card-meal-height: 45px;
-
-// pour test
-$spinner-duration: 0s;
-$spinner-offset: 0s;
-$card-showup-duration: 0s;
-$card-showup-offset: 0s;

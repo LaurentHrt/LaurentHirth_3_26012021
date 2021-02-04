@@ -29,7 +29,6 @@ a:visited {
 }
 
 .spinner-container {
-	display: contents;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -38,7 +37,7 @@ a:visited {
 	position: fixed;
 	background-color: white;
 	z-index: 9999;
-	animation: eraser 500ms $spinner-duration + $spinner-offset * 2 both;
+	animation: eraser 500ms $content-showup-offset - 100ms both;
 }
 
 .spinner {
