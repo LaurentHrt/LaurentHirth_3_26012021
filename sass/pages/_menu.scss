@@ -5,6 +5,9 @@
 	@include tablet-only {
 		height: 30vw;
 	}
+	@include desktop-only {
+		max-height: 420px;
+	}
 	img {
 		object-fit: cover;
 		height: 130%;

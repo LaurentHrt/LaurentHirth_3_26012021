@@ -458,6 +458,14 @@ header .header__arrow i {
   padding: 39px 20px 50px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section > * {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1400px;
+  }
+}
+
 .localisation {
   display: flex;
   justify-content: center;
@@ -548,6 +556,12 @@ footer i {
 @media screen and (min-width: 768px) {
   .menu-image-container {
     height: 30vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-image-container {
+    max-height: 420px;
   }
 }
 
