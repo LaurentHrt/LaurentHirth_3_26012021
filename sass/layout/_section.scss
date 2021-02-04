@@ -10,10 +10,10 @@
 	}
 }
 
-.banniere {
+.banner {
 	text-align: center;
 	background-color: $light-background;
-	&__texte {
+	&__text {
 		font-weight: 500;
 		font-size: 1.3em;
 	}
@@ -22,7 +22,7 @@
 	}
 }
 
-.fonctionnement {
+.function {
 	h1 {
 		margin-bottom: 30px;
 	}

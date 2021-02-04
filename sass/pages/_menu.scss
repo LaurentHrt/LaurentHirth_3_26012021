@@ -26,14 +26,14 @@
 	@include desktop-only {
 		padding: 30px 50px 50px;
 	}
-	&__barre-separation {
+	&__separation-bar {
 		@include separation-style;
 	}
-	&__entete {
+	&__header {
 		@include restaurant-title-style;
 		@include heart-hover-style;
 	}
-	&__titre {
+	&__title {
 		@include menu-title-style;
 	}
 }
