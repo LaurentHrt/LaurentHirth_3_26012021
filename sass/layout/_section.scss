@@ -6,21 +6,7 @@
 	@include desktop-only {
 		margin-right: auto;
 		margin-left: auto;
-		max-width: 1400px;
-	}
-}
-
-.localisation {
-	display: flex;
-	justify-content: center;
-	background-color: $dark-background;
-	box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
-	font-weight: 500;
-	&__icone {
-		margin: auto 0;
-		width: 0;
-		position: relative;
-		right: 40px;
+		max-width: $page-max-width;
 	}
 }
 
@@ -30,6 +16,9 @@
 	&__texte {
 		font-weight: 500;
 		font-size: 1.3em;
+	}
+	@include desktop-only {
+		box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
 	}
 }
 

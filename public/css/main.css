@@ -48,6 +48,10 @@ a:visited {
   display: contents;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .spinner-container {
   display: contents;
   display: flex;
@@ -436,12 +440,14 @@ a:nth-child(19) > .carte {
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
 header .header__logo img {
   width: 165px;
-  padding: 21px 20px 10px;
+  padding: 21px 0 10px;
 }
 
 header .header__arrow {
@@ -452,6 +458,39 @@ header .header__arrow {
 
 header .header__arrow i {
   font-size: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto auto;
+    padding: 0 100px;
+    max-width: 1400px;
+  }
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.localisation__icone {
+  margin: auto 0;
+  width: 0;
+  position: relative;
+  right: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .localisation {
+    background-color: initial;
+    box-shadow: none;
+  }
 }
 
 .section {
@@ -466,21 +505,6 @@ header .header__arrow i {
   }
 }
 
-.localisation {
-  display: flex;
-  justify-content: center;
-  background-color: #eaeaea;
-  box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
-  font-weight: 500;
-}
-
-.localisation__icone {
-  margin: auto 0;
-  width: 0;
-  position: relative;
-  right: 40px;
-}
-
 .banniere {
   text-align: center;
   background-color: #f6f6f6;
@@ -489,6 +513,12 @@ header .header__arrow i {
 .banniere__texte {
   font-weight: 500;
   font-size: 1.3em;
+}
+
+@media screen and (min-width: 1200px) {
+  .banniere {
+    box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .fonctionnement h1 {
@@ -508,7 +538,7 @@ header .header__arrow i {
 footer {
   color: white;
   background-color: #353535;
-  padding: 20px 20px 30px 20px;
+  padding: 20px 20px 30px;
 }
 
 footer a,
@@ -516,14 +546,27 @@ footer a:visited {
   color: white;
 }
 
-footer div {
+@media screen and (min-width: 1200px) {
+  footer {
+    padding: 30px 50px;
+  }
+}
+
+footer .footer__title {
   font-family: "Shrikhand";
   font-size: larger;
   margin-bottom: 18px;
   margin-left: 4px;
 }
 
-footer ul {
+@media screen and (min-width: 1200px) {
+  footer .footer__title {
+    margin: 0 auto 18px;
+    max-width: 1400px;
+  }
+}
+
+footer .footer__links {
   display: grid;
   list-style-type: none;
   margin: 0;
@@ -531,18 +574,25 @@ footer ul {
 }
 
 @media screen and (min-width: 768px) {
-  footer ul {
+  footer .footer__links {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
 }
 
-footer li {
+@media screen and (min-width: 1200px) {
+  footer .footer__links {
+    margin: auto;
+    max-width: 1400px;
+  }
+}
+
+footer .footer__links li {
   margin-bottom: 7px;
   margin-left: 5px;
 }
 
-footer i {
+footer .footer__links i {
   font-size: 13px;
   width: 22px;
 }

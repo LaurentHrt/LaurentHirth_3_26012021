@@ -1,18 +1,25 @@
 footer {
 	color: white;
 	background-color: $footer-background;
-	padding: 20px 20px 30px 20px;
+	padding: 20px 20px 30px;
 	a,
 	a:visited {
 		color: white;
 	}
-	div {
+	@include desktop-only {
+		padding: 30px 50px;
+	}
+	.footer__title {
 		font-family: "Shrikhand";
 		font-size: larger;
 		margin-bottom: 18px;
 		margin-left: 4px;
+		@include desktop-only {
+			margin: 0 auto 18px;
+			max-width: $page-max-width;
+		}
 	}
-	ul {
+	.footer__links {
 		display: grid;
 		list-style-type: none;
 		margin: 0;
@@ -21,13 +28,17 @@ footer {
 			grid-template-columns: 1fr 1fr 1fr 1fr;
 			grid-template-rows: 1fr;
 		}
-	}
-	li {
-		margin-bottom: 7px;
-		margin-left: 5px;
-	}
-	i {
-		font-size: 13px;
-		width: 22px;
+		@include desktop-only {
+			margin: auto;
+			max-width: $page-max-width;
+		}
+		li {
+			margin-bottom: 7px;
+			margin-left: 5px;
+		}
+		i {
+			font-size: 13px;
+			width: 22px;
+		}
 	}
 }
