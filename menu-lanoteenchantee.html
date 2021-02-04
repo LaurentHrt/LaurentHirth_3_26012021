@@ -13,133 +13,133 @@
 	<body>
 		<div class="spinner-container"><div class="spinner"></div></div>
 
-		<header>
+		<header class="flex-column">
 			<a href="./index.html">
 				<div class="header__arrow">
 					<i class="fas fa-arrow-left"></i>
 				</div>
 			</a>
 			<h1 class="header__logo">
-				<img src="./public/img/logo/ohmyfood.png" alt="ohmyfood" />
+				<img src="./public/img/logo/ohmyfood.png" alt="ohmyfood" srcset="./public/img/logo/ohmyfood.svg" />
 			</h1>
 		</header>
 
-		<div class="menu-image-container"><img src="public/img/restaurants/stil.jpg" alt="Restaurant la note enchantee" /></div>
+		<div class="menu-image-container">
+			<picture>
+				<source srcset="public/img/restaurants/2_large/stil.jpg" media="(min-width: 1200px)" />
+				<source srcset="public/img/restaurants/3_medium/stil.jpg" media="(min-width: 768px)" />
+				<img src="public/img/restaurants/4_small/stil.jpg" alt="Restaurant la note enchantee" />
+			</picture>
+		</div>
 
 		<section class="section menu">
-			<div class="menu__entete">
+			<div class="menu__header">
 				La note enchantée
 				<a href=""><i class="far fa-heart"></i></a>
 			</div>
 
-			<div class="menu__titre">Entrées</div>
-			<div class="menu__barre-separation"></div>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Ravioles de fois gras</div>
-						<div class="carte-plat__texte__description">Accompagnés de leur crème à la truffe</div>
+			<div class="list list-menu">
+				<div>
+					<div class="menu__title">Entrées</div>
+					<div class="menu__separation-bar"></div>
+					<div class="list list-meal">
+						<div class="card card-meal">
+							<div class="card-meal__text">
+								<div class="card-meal__text__title">Ravioles de fois gras</div>
+								<div class="card-meal__text__description">Accompagnés de leur crème à la truffe</div>
+							</div>
+							<div class="card-meal__price">25€</div>
+							<div class="card-meal__selectBtn"><i class="fas fa-check-circle"></i></div>
+						</div>
+						<div class="card card-meal">
+							<div class="card-meal__text">
+								<div class="card-meal__text__title">Caviar osciètre</div>
+								<div class="card-meal__text__description">Dur blini à la farine de blé noir</div>
+							</div>
+							<div class="card-meal__price">35€</div>
+							<div class="card-meal__selectBtn"><i class="fas fa-check-circle"></i></div>
+						</div>
+						<div class="card card-meal">
+							<div class="card-meal__text">
+								<div class="card-meal__text__title">Homard et espuma de potiron</div>
+								<div class="card-meal__text__description">Mariné aux zestes d'orange</div>
+							</div>
+							<div class="card-meal__price">20€</div>
+							<div class="card-meal__selectBtn"><i class="fas fa-check-circle"></i></div>
+						</div>
+						<div class="card card-meal">
+							<div class="card-meal__text">
+								<div class="card-meal__text__title">Fois gras de canard cuit entier</div>
+								<div class="card-meal__text__description">Confiture de figue et pain toasté</div>
+							</div>
+							<div class="card-meal__price">35€</div>
+							<div class="card-meal__selectBtn"><i class="fas fa-check-circle"></i></div>
+						</div>
 					</div>
-					<div class="carte-plat__prix">25€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
 				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Caviar osciètre</div>
-						<div class="carte-plat__texte__description">Dur blini à la farine de blé noir</div>
-					</div>
-					<div class="carte-plat__prix">35€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Homard et espuma de potiron</div>
-						<div class="carte-plat__texte__description">Mariné aux zestes d'orange</div>
-					</div>
-					<div class="carte-plat__prix">20€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Fois gras de canard cuit entier</div>
-						<div class="carte-plat__texte__description">Confiture de figue et pain toasté</div>
-					</div>
-					<div class="carte-plat__prix">35€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
 
-			<div class="menu__titre">Plats</div>
-			<div class="menu__barre-separation"></div>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Noix de coquilles Saint-Jacques</div>
-						<div class="carte-plat__texte__description">Sur lit de purée de céleri-rave</div>
+				<div>
+					<div class="menu__title">Plats</div>
+					<div class="menu__separation-bar"></div>
+					<div class="list list-meal">
+						<div class="card card-meal">
+							<div class="card-meal__text">
+								<div class="card-meal__text__title">Noix de coquilles Saint-Jacques</div>
+								<div class="card-meal__text__description">Sur lit de purée de céleri-rave</div>
+							</div>
+							<div class="card-meal__price">40€</div>
+							<div class="card-meal__selectBtn"><i class="fas fa-check-circle"></i></div>
+						</div>
+						<div class="card card-meal">
+							<div class="card-meal__text">
+								<div class="card-meal__text__title">Langoustine poêlée</div>
+								<div class="card-meal__text__description">Purée de patate douce</div>
+							</div>
+							<div class="card-meal__price">35€</div>
+							<div class="card-meal__selectBtn"><i class="fas fa-check-circle"></i></div>
+						</div>
+						<div class="card card-meal">
+							<div class="card-meal__text">
+								<div class="card-meal__text__title">Mijotée de queue de boeuf</div>
+								<div class="card-meal__text__description">Et riz sauvage aux zestes de citron</div>
+							</div>
+							<div class="card-meal__price">44€</div>
+							<div class="card-meal__selectBtn"><i class="fas fa-check-circle"></i></div>
+						</div>
 					</div>
-					<div class="carte-plat__prix">40€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
 				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Langoustine poêlée</div>
-						<div class="carte-plat__texte__description">Purée de patate douce</div>
-					</div>
-					<div class="carte-plat__prix">35€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Mijotée de queue de boeuf</div>
-						<div class="carte-plat__texte__description">Et riz sauvage aux zestes de citron</div>
-					</div>
-					<div class="carte-plat__prix">44€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
 
-			<div class="menu__titre">Desserts</div>
-			<div class="menu__barre-separation"></div>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Macaron noisette et chocolat</div>
-						<div class="carte-plat__texte__description">Glace au caramel brun et sel de Guérande</div>
+				<div>
+					<div class="menu__title">Desserts</div>
+					<div class="menu__separation-bar"></div>
+					<div class="list list-meal">
+						<div class="card card-meal">
+							<div class="card-meal__text">
+								<div class="card-meal__text__title">Macaron noisette et chocolat</div>
+								<div class="card-meal__text__description">Glace au caramel brun et sel de Guérande</div>
+							</div>
+							<div class="card-meal__price">18€</div>
+							<div class="card-meal__selectBtn"><i class="fas fa-check-circle"></i></div>
+						</div>
+						<div class="card card-meal">
+							<div class="card-meal__text">
+								<div class="card-meal__text__title">Baba au rhum revisité</div>
+								<div class="card-meal__text__description">Avec son coulis de citron</div>
+							</div>
+							<div class="card-meal__price">22€</div>
+							<div class="card-meal__selectBtn"><i class="fas fa-check-circle"></i></div>
+						</div>
+						<div class="card card-meal">
+							<div class="card-meal__text">
+								<div class="card-meal__text__title">Tarte au citron meringuée</div>
+								<div class="card-meal__text__description">Déstructurée</div>
+							</div>
+							<div class="card-meal__price">23€</div>
+							<div class="card-meal__selectBtn"><i class="fas fa-check-circle"></i></div>
+						</div>
 					</div>
-					<div class="carte-plat__prix">18€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
 				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Baba au rhum revisité</div>
-						<div class="carte-plat__texte__description">Avec son coulis de citron</div>
-					</div>
-					<div class="carte-plat__prix">22€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
-			<a href="">
-				<div class="carte carte-plat">
-					<div class="carte-plat__texte">
-						<div class="carte-plat__texte__titre">Tarte au citron meringuée</div>
-						<div class="carte-plat__texte__description">Déstructurée</div>
-					</div>
-					<div class="carte-plat__prix">23€</div>
-					<div class="carte-plat__selectBtn"><i class="fas fa-check-circle"></i></div>
-				</div>
-			</a>
+			</div>
 
 			<div class="btn-container">
 				<a href=""><div class="btn">Commander</div></a>
@@ -147,8 +147,8 @@
 		</section>
 
 		<footer>
-			<div>ohmyfood</div>
-			<ul>
+			<div class="footer__title">ohmyfood</div>
+			<ul class="footer__links">
 				<li>
 					<a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a>
 				</li>

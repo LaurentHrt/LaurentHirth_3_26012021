@@ -1,5 +1,20 @@
+// ************* Responsive style ************* //
+@mixin tablet-only {
+	@media screen and (min-width: map-get($breakpoints, tablet)) {
+		@content;
+	}
+}
+
+@mixin desktop-only {
+	@media screen and (min-width: map-get($breakpoints, desktop)) {
+		@content;
+	}
+}
+
+// ************* Buttons style ************* //
+
 @mixin btn-style {
-	background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+	background: $btn-bg-gradient;
 	border-radius: 2em;
 	box-shadow: $standard-shadow;
 	display: flex;
@@ -7,7 +22,7 @@
 	align-items: center;
 	align-self: center;
 	color: white;
-	font-weight: 400;
+	font-weight: 500;
 	height: 50px;
 	margin: 13px;
 	padding: 0 35px;
@@ -20,17 +35,31 @@
 	margin-top: 50px;
 }
 
-@mixin new-button-style {
+@mixin btn-hover-style {
+	transition: $btn-hover-transition;
+	&:hover {
+		box-shadow: $standard-hover-shadow;
+		opacity: 0.95;
+	}
+}
+
+@mixin new-btn-style {
+	position: absolute;
+	top: 14px;
+	right: 11px;
 	width: 60px;
 	height: 17px;
 	background-color: $tertiary-color;
 	color: darken($tertiary-color, 40%);
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 0.9em;
 	padding: 6px 10px;
 	border-radius: $small-radius;
 	text-align: center;
 	box-shadow: $standard-shadow;
+	&::after {
+		content: "Nouveau";
+	}
 }
 
 @mixin selectBtn-style {
@@ -58,15 +87,47 @@
 	}
 }
 
+// ************* Cards style ************* //
+
 @mixin card-style {
 	box-shadow: $standard-shadow;
 	border-radius: $standard-radius;
+	background-color: white;
+}
+
+@mixin card-hover-style {
+	&:hover {
+		box-shadow: $standard-hover-shadow;
+	}
 }
 
 @mixin heart-hover-style {
-	font-weight: 900;
-	color: $primary-color;
+	i:hover {
+		font-weight: 900;
+		background: $btn-bg-gradient;
+		color: transparent;
+		background-clip: text;
+	}
 }
+
+@mixin card-restaurant-hover-style {
+	&:hover {
+		.card-restaurant__photo img {
+			transform: scale(1.1);
+		}
+	}
+}
+
+@mixin card-fonction-hover-style {
+	&:hover {
+		background-color: $primary-color-light;
+		.card-function__icon {
+			color: $primary-color;
+		}
+	}
+}
+
+// ************* Texts style ************* //
 
 @mixin separation-style {
 	height: 3px;
@@ -80,8 +141,14 @@
 	font-size: 1.75em;
 	display: flex;
 	justify-content: space-between;
-	padding-right: 20px;
 	align-items: center;
+	i {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	@include tablet-only {
+		justify-content: center;
+	}
 }
 
 @mixin menu-title-style {

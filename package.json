@@ -1,0 +1,21 @@
+{
+	"name": "ohmyfood",
+	"version": "1.0.0",
+	"description": "Openclassrooms - Parcours développeur Front-end",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prefix": "postcss ./public/css/main.css --use autoprefixer -d ./public/css/prefixed/"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LaurentHrt/LaurentHirth_3_26012021.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/LaurentHrt/LaurentHirth_3_26012021/issues"
+	},
+	"homepage": "https://github.com/LaurentHrt/LaurentHirth_3_26012021#readme",
+	"browserslist": "last 4 versions"
+}

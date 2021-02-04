@@ -1,8 +1,10 @@
 header {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	.header__logo img {
 		width: 165px;
-		padding: 21px 20px 10px;
+		padding: 21px 0 10px;
 	}
 	.header__arrow {
 		position: absolute;
@@ -11,5 +13,31 @@ header {
 		i {
 			font-size: 20px;
 		}
+	}
+	@include desktop-only {
+		flex-direction: row;
+		justify-content: space-between;
+		margin: auto auto;
+		padding: 0 100px;
+		max-width: $page-max-width;
+	}
+}
+
+.localisation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $dark-background;
+	box-shadow: inset 0px 0.5em 10px -10px rgba(0, 0, 0, 0.5);
+	font-weight: 500;
+	&__icon {
+		margin: auto 0;
+		width: 0;
+		position: relative;
+		right: 40px;
+	}
+	@include desktop-only {
+		background-color: initial;
+		box-shadow: none;
 	}
 }

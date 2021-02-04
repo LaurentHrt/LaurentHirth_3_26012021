@@ -2,6 +2,12 @@
 	position: relative;
 	z-index: -1;
 	height: 35vh;
+	@include tablet-only {
+		height: 30vw;
+	}
+	@include desktop-only {
+		max-height: 420px;
+	}
 	img {
 		object-fit: cover;
 		height: 130%;
@@ -10,16 +16,45 @@
 }
 
 .menu {
-	&__barre-separation {
-		@include separation-style;
+	background-color: $light-background;
+	padding: 30px 15px 50px;
+	border-top-left-radius: $big-radius;
+	border-top-right-radius: $big-radius;
+	@include tablet-only {
+		padding: 30px 150px 50px;
 	}
-	&__entete {
+	@include desktop-only {
+		padding: 30px 50px 50px;
+	}
+	&__header {
 		@include restaurant-title-style;
-		& i:hover {
-			@include heart-hover-style;
-		}
+		@include heart-hover-style;
 	}
-	&__titre {
+	&__title {
 		@include menu-title-style;
+		animation: title-entrance $standard-transition-time $content-showup-offset cubic-bezier(0.41, 0, 0.04, 1) both;
+	}
+	&__separation-bar {
+		@include separation-style;
+		animation: separation-bar-entrance $standard-transition-time $content-showup-offset + 500ms cubic-bezier(0.57, 0.02, 0.34, 1.27) both;
+		transform-origin: left;
+	}
+}
+
+@keyframes title-entrance {
+	0% {
+		transform: translateX(-200px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes separation-bar-entrance {
+	0% {
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(1);
 	}
 }

@@ -1,11 +1,130 @@
-.carte {
+.card {
 	@include card-style;
-	animation: card-showup $card-showup-duration $spinner-duration + $spinner-offset * 2 both;
+	animation: card-showup $card-showup-duration $content-showup-offset cubic-bezier(0.3, 0.12, 0.22, 0.99) both;
 }
 
-@for $i from 1 to $cardCount {
-	a:nth-child(#{$i}) > .carte {
-		animation-delay: $spinner-duration + $card-showup-offset + ($card-showup-delay * $i);
+.card-function {
+	cursor: pointer;
+	display: flex;
+	font-weight: 500;
+	margin-left: 12px;
+	height: 72px;
+	background-color: $light-background;
+	transition: $standard-transition-time;
+	@include card-hover-style;
+	@include card-fonction-hover-style;
+	div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto 10px;
+		position: relative;
+		left: -22px;
+		top: 3px;
+	}
+	&__num {
+		background-color: $primary-color;
+		color: white;
+		border-radius: 50%;
+		min-width: 24px;
+		height: 24px;
+		text-align: center;
+		font-size: 0.9em;
+	}
+	&__icon {
+		transition: $standard-transition-time;
+		font-size: 1.25em;
+		width: 20px;
+	}
+}
+
+.card-restaurant {
+	position: relative;
+	height: 250px;
+	overflow: hidden;
+	transition: $standard-transition-time;
+	@include card-hover-style;
+	@include card-restaurant-hover-style;
+	&__photo {
+		width: 100%;
+		height: 70%;
+		overflow: hidden;
+		img {
+			transition: $standard-transition-time 150ms;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-top-left-radius: $standard-radius;
+			border-top-right-radius: $standard-radius;
+		}
+	}
+	&__new {
+		@include new-btn-style;
+	}
+	&__text {
+		padding: $standard-card-text-padding;
+		&__name {
+			font-weight: 500;
+			font-size: 1.1em;
+			margin-bottom: 5px;
+		}
+		&__location {
+		}
+	}
+	&__heart {
+		position: absolute;
+		right: 25px;
+		bottom: 30px;
+		font-size: 1.3em;
+		@include heart-hover-style;
+	}
+}
+
+.card-meal {
+	height: 69px;
+	display: flex;
+	align-items: flex-end;
+	overflow: hidden;
+	cursor: pointer;
+
+	@for $i from 1 to $cardCount {
+		&:nth-child(#{$i}) {
+			animation-delay: $content-showup-offset + ($card-showup-delay * $i);
+		}
+	}
+
+	&__text {
+		height: $card-meal-height;
+		padding: $standard-card-text-padding;
+		white-space: nowrap;
+		overflow: hidden;
+		flex-grow: 1;
+		&__title {
+			font-weight: 500;
+			margin-bottom: 7px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		&__description {
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+	&__price {
+		font-weight: 500;
+		padding: 12px 20px 12px 0;
+	}
+	&__selectBtn {
+		@include selectBtn-style;
+		@include selectBtn-transition;
+	}
+	&:hover {
+		& .card-meal__selectBtn {
+			width: 59px;
+			i {
+				transform: rotate(1turn);
+			}
+		}
 	}
 }
 
@@ -17,130 +136,5 @@
 	100% {
 		opacity: 1;
 		transform: translateY(0px);
-	}
-}
-
-.carte-fonctionnement {
-	display: flex;
-	font-weight: 400;
-	margin-bottom: 25px;
-	margin-left: 12px;
-	height: 72px;
-	background-color: $light-background;
-	div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: auto 10px;
-		position: relative;
-		left: -22px;
-		top: 3px;
-	}
-	&__numero {
-		background-color: $primary-color;
-		color: white;
-		border-radius: 50%;
-		min-width: 24px;
-		height: 24px;
-		text-align: center;
-		font-size: 0.9em;
-	}
-	&__icone {
-		font-size: 1.25em;
-		width: 20px;
-	}
-}
-
-.carte-restaurant {
-	position: relative;
-	margin-bottom: 20px;
-	height: 250px;
-	overflow: hidden;
-	&:hover {
-		.carte-restaurant__photo img {
-			transform: scale(1.1);
-		}
-	}
-
-	&__photo {
-		width: 100%;
-		height: 70%;
-		overflow: hidden;
-		img {
-			transition: 200ms;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			border-top-left-radius: $standard-radius;
-			border-top-right-radius: $standard-radius;
-		}
-	}
-	&__nouveau {
-		position: absolute;
-		top: 14px;
-		right: 11px;
-		@include new-button-style;
-	}
-	&__texte {
-		padding: $standard-card-text-padding;
-		&__nom {
-			font-weight: 400;
-			font-size: 1.1em;
-			margin-bottom: 5px;
-		}
-		&__lieu {
-		}
-	}
-	&__coeur {
-		position: absolute;
-		right: 25px;
-		bottom: 30px;
-		font-size: 1.3em;
-		i {
-			&:hover {
-				@include heart-hover-style;
-			}
-		}
-	}
-}
-
-.carte-plat {
-	height: 69px;
-	margin-bottom: 15px;
-	display: flex;
-	align-items: flex-end;
-	overflow: hidden;
-	&__texte {
-		height: $carte-plat-height;
-		padding: $standard-card-text-padding;
-		white-space: nowrap;
-		overflow: hidden;
-		flex-grow: 1;
-		&__titre {
-			font-weight: 400;
-			margin-bottom: 7px;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
-		&__description {
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
-	}
-	&__prix {
-		font-weight: 400;
-		padding: 12px 20px 12px 0;
-	}
-	&__selectBtn {
-		@include selectBtn-style;
-		@include selectBtn-transition;
-	}
-	&:hover {
-		& .carte-plat__selectBtn {
-			width: 59px;
-			i {
-				transform: rotate(1turn);
-			}
-		}
 	}
 }
