@@ -52,7 +52,7 @@ a:visited {
   flex-direction: column;
 }
 
-.spinner-container {
+.loader-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,14 +64,34 @@ a:visited {
   animation: eraser 500ms 3.9s both;
 }
 
-.spinner {
-  position: fixed;
-  margin: auto;
-  width: 300px;
-  height: 30px;
-  background-color: black;
-  animation: spinner 3s 500ms backwards;
-  transform-origin: left;
+.loader {
+  font-size: 5rem;
+  margin: 0px 10px;
+  font-family: "Shrikhand";
+}
+
+.loader__item1 {
+  transform: scale(1);
+  animation: jump 400ms 700ms 6 cubic-bezier(0, 0, 0.1, 1) alternate backwards;
+}
+
+.loader__item2 {
+  transform: scale(1);
+  animation: jump 400ms 900ms 6 cubic-bezier(0, 0, 0.1, 1) alternate backwards;
+}
+
+.loader__item3 {
+  transform: scale(1);
+  animation: jump 400ms 1100ms 6 cubic-bezier(0, 0, 0.1, 1) alternate backwards;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-120px);
+  }
 }
 
 @keyframes eraser {
@@ -84,15 +104,6 @@ a:visited {
   100% {
     opacity: 0;
     transform: translateX(-9999px);
-  }
-}
-
-@keyframes spinner {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
   }
 }
 

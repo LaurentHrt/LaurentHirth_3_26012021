@@ -26,10 +26,10 @@ $big-radius: 40px;
 // Animations
 $standard-transition-time: 0.4s;
 $standard-transition-style: $standard-transition-time cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-$spinner-duration: 3s;
-$spinner-offset: 500ms;
+$loader-duration: 3s;
+$loader-offset: 500ms;
 $card-showup-duration: 500ms;
-$content-showup-offset: $spinner-duration + $spinner-offset + 500ms;
+$content-showup-offset: $loader-duration + $loader-offset + 500ms;
 $cardCount: 4;
 $card-showup-delay: 100ms;
 
