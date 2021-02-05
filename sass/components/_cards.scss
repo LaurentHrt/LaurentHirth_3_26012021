@@ -122,9 +122,21 @@
 		& .card-meal__selectBtn {
 			width: 59px;
 			i {
-				transform: rotate(1turn);
+				animation: select-image $standard-transition-time + 200ms both;
 			}
 		}
+	}
+}
+
+@keyframes select-image {
+	0% {
+		transform: rotate(90deg);
+	}
+	20% {
+		transform: rotate(90deg);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }
 

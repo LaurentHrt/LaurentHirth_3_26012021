@@ -287,11 +287,7 @@ a:visited {
   color: white;
   font-size: 1.2em;
   position: relative;
-  right: -20px;
-}
-
-.card-meal__selectBtn i {
-  transition: transform 0.4s ease-in-out;
+  left: 20px;
 }
 
 .card-meal:hover .card-meal__selectBtn {
@@ -299,7 +295,19 @@ a:visited {
 }
 
 .card-meal:hover .card-meal__selectBtn i {
-  transform: rotate(1turn);
+  animation: select-image 0.6s both;
+}
+
+@keyframes select-image {
+  0% {
+    transform: rotate(90deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes card-showup {
