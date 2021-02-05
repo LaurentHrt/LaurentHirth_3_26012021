@@ -14,6 +14,7 @@
 	@include card-hover-style;
 	@include card-fonction-hover-style;
 	@include one-by-one-animation($card-function-count);
+
 	div {
 		display: flex;
 		justify-content: center;
