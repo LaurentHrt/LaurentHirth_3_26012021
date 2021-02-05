@@ -2,6 +2,13 @@
 /* ********************** Polices  ************************ */
 /* ******************************************************** */
 @font-face {
+  font-family: "Shrikhand";
+  src: url("../polices/Shrikhand/Shrikhand-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Roboto";
   src: url("../polices/Roboto/Roboto-Light.ttf") format("truetype");
   font-weight: 300;
@@ -12,13 +19,6 @@
   font-family: "Roboto";
   src: url("../polices/Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Shrikhand";
-  src: url("../polices/Shrikhand/Shrikhand-regular.ttf") format("truetype");
-  font-weight: 400;
   font-style: normal;
 }
 
@@ -67,20 +67,31 @@ a:visited {
 .loader {
   font-size: 5rem;
   margin: 0px 10px;
-  font-family: "Shrikhand";
 }
 
 .loader__item1 {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 50%;
   transform: scale(1);
   animation: jump 400ms 700ms 6 cubic-bezier(0, 0, 0.1, 1) alternate backwards;
 }
 
 .loader__item2 {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 50%;
   transform: scale(1);
   animation: jump 400ms 900ms 6 cubic-bezier(0, 0, 0.1, 1) alternate backwards;
 }
 
 .loader__item3 {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 50%;
   transform: scale(1);
   animation: jump 400ms 1100ms 6 cubic-bezier(0, 0, 0.1, 1) alternate backwards;
 }
@@ -136,6 +147,18 @@ a:visited {
   color: #9356dc;
 }
 
+.card-function:nth-child(1) {
+  animation-delay: 4.1s;
+}
+
+.card-function:nth-child(2) {
+  animation-delay: 4.2s;
+}
+
+.card-function:nth-child(3) {
+  animation-delay: 4.3s;
+}
+
 .card-function div {
   display: flex;
   justify-content: center;
@@ -175,6 +198,22 @@ a:visited {
 
 .card-restaurant:hover .card-restaurant__photo img {
   transform: scale(1.1);
+}
+
+.card-restaurant:nth-child(1) {
+  animation-delay: 4.1s;
+}
+
+.card-restaurant:nth-child(2) {
+  animation-delay: 4.2s;
+}
+
+.card-restaurant:nth-child(3) {
+  animation-delay: 4.3s;
+}
+
+.card-restaurant:nth-child(4) {
+  animation-delay: 4.4s;
 }
 
 .card-restaurant__photo {
@@ -254,6 +293,10 @@ a:visited {
 
 .card-meal:nth-child(3) {
   animation-delay: 4.3s;
+}
+
+.card-meal:nth-child(4) {
+  animation-delay: 4.4s;
 }
 
 .card-meal__text {

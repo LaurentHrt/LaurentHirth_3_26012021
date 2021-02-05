@@ -43,9 +43,12 @@ a:visited {
 .loader {
 	font-size: 5rem;
 	margin: 0px 10px;
-	font-family: "Shrikhand";
 	@for $i from 1 to 4 {
 		&__item#{$i} {
+			width: 30px;
+			height: 30px;
+			background: $btn-bg-gradient;
+			border-radius: 50%;
 			transform: scale(1);
 			animation: jump 400ms 500ms + 200ms * $i 6 cubic-bezier(0, 0, 0.1, 1) alternate backwards;
 		}

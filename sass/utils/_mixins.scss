@@ -127,6 +127,14 @@
 	}
 }
 
+@mixin one-by-one-animation($card-count) {
+	@for $i from 1 to $card-count + 1 {
+		&:nth-child(#{$i}) {
+			animation-delay: $content-showup-offset + ($card-showup-delay * $i);
+		}
+	}
+}
+
 // ************* Texts style ************* //
 
 @mixin separation-style {
