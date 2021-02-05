@@ -30,7 +30,9 @@ $loader-duration: 3s;
 $loader-offset: 500ms;
 $card-showup-duration: 500ms;
 $content-showup-offset: $loader-duration + $loader-offset + 500ms;
-$cardCount: 4;
+$card-meal-count: 4;
+$card-function-count: 3;
+$card-restaurant-count: 4;
 $card-showup-delay: 100ms;
 
 // Buttons
