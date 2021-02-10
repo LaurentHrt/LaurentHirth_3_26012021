@@ -75,16 +75,13 @@
 		color: white;
 		font-size: 1.2em;
 		position: relative;
-		right: -20px;
+		left: 20px;
 	}
 }
 
 @mixin selectBtn-transition {
 	transition: width $standard-transition-time ease-in-out;
 	transform-origin: right;
-	i {
-		transition: transform $standard-transition-time ease-in-out;
-	}
 }
 
 // ************* Cards style ************* //
