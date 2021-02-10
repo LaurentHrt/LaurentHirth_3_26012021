@@ -27,13 +27,15 @@ $big-radius: 40px;
 $standard-transition-time: 0.4s;
 $standard-transition-style: $standard-transition-time cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 $loader-duration: 3s;
-$loader-offset: 500ms;
+$loader-offset: 200ms;
 $card-showup-duration: 500ms;
-$content-showup-offset: $loader-duration + $loader-offset + 500ms;
+$content-showup-offset: $loader-duration + $loader-offset + 400ms;
 $card-meal-count: 4;
 $card-function-count: 3;
 $card-restaurant-count: 4;
 $card-showup-delay: 100ms;
+$eraser-duration: 500ms;
+$jump-duration: 400ms;
 
 // Buttons
 $btn-bg-gradient: linear-gradient(to bottom right, $secondary-color, $primary-color);

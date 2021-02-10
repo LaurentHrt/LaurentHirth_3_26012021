@@ -60,7 +60,7 @@ a:visited {
   position: fixed;
   background-color: white;
   z-index: 9999;
-  animation: eraser 500ms 3.9s both;
+  animation: eraser 500ms 3.1s both;
 }
 
 .loader {
@@ -73,7 +73,7 @@ a:visited {
   height: 30px;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 50%;
-  animation: jump 400ms 700ms 6 cubic-bezier(0, 0, 0.1, 1) alternate;
+  animation: jump 400ms 200ms 6 cubic-bezier(0, 0, 0.1, 1) alternate;
 }
 
 .loader__item2 {
@@ -81,7 +81,7 @@ a:visited {
   height: 30px;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 50%;
-  animation: jump 400ms 900ms 6 cubic-bezier(0, 0, 0.1, 1) alternate;
+  animation: jump 400ms 400ms 6 cubic-bezier(0, 0, 0.1, 1) alternate;
 }
 
 .loader__item3 {
@@ -89,7 +89,7 @@ a:visited {
   height: 30px;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 50%;
-  animation: jump 400ms 1100ms 6 cubic-bezier(0, 0, 0.1, 1) alternate;
+  animation: jump 400ms 600ms 6 cubic-bezier(0, 0, 0.1, 1) alternate;
 }
 
 @keyframes jump {
@@ -124,7 +124,7 @@ a:visited {
   box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   background-color: white;
-  animation: card-showup 500ms 4s cubic-bezier(0.3, 0.12, 0.22, 0.98) both;
+  animation: card-showup 500ms 3.6s cubic-bezier(0.3, 0.12, 0.22, 0.98) both;
 }
 
 .card-function {
@@ -150,15 +150,15 @@ a:visited {
 }
 
 .card-function:nth-child(1) {
-  animation-delay: 4.1s;
+  animation-delay: 3.7s;
 }
 
 .card-function:nth-child(2) {
-  animation-delay: 4.2s;
+  animation-delay: 3.8s;
 }
 
 .card-function:nth-child(3) {
-  animation-delay: 4.3s;
+  animation-delay: 3.9s;
 }
 
 .card-function div {
@@ -203,19 +203,19 @@ a:visited {
 }
 
 .card-restaurant:nth-child(1) {
-  animation-delay: 4.1s;
+  animation-delay: 3.7s;
 }
 
 .card-restaurant:nth-child(2) {
-  animation-delay: 4.2s;
+  animation-delay: 3.8s;
 }
 
 .card-restaurant:nth-child(3) {
-  animation-delay: 4.3s;
+  animation-delay: 3.9s;
 }
 
 .card-restaurant:nth-child(4) {
-  animation-delay: 4.4s;
+  animation-delay: 4s;
 }
 
 .card-restaurant__photo {
@@ -286,19 +286,19 @@ a:visited {
 }
 
 .card-meal:nth-child(1) {
-  animation-delay: 4.1s;
+  animation-delay: 3.7s;
 }
 
 .card-meal:nth-child(2) {
-  animation-delay: 4.2s;
+  animation-delay: 3.8s;
 }
 
 .card-meal:nth-child(3) {
-  animation-delay: 4.3s;
+  animation-delay: 3.9s;
 }
 
 .card-meal:nth-child(4) {
-  animation-delay: 4.4s;
+  animation-delay: 4s;
 }
 
 .card-meal__text {
@@ -666,7 +666,7 @@ footer .footer__links i {
   text-transform: uppercase;
   margin-bottom: 5px;
   margin-top: 22px;
-  animation: title-entrance 0.4s 4s cubic-bezier(0.41, 0, 0.04, 1) both;
+  animation: title-entrance 0.4s 3.6s cubic-bezier(0.41, 0, 0.04, 1) both;
 }
 
 .menu__separation-bar {
@@ -674,7 +674,7 @@ footer .footer__links i {
   width: 40px;
   background-color: #99e2d0;
   margin-bottom: 13px;
-  animation: separation-bar-entrance 0.4s 4.5s cubic-bezier(0.57, 0.02, 0.34, 1.27) both;
+  animation: separation-bar-entrance 0.4s 4.1s cubic-bezier(0.57, 0.02, 0.34, 1.27) both;
   transform-origin: left;
 }
 
