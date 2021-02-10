@@ -1,1 +1,8 @@
-public/css/main.css.map
+# Dependency directories
+node_modules/
+
+# Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map

@@ -70,8 +70,6 @@
 			font-size: 1.1em;
 			margin-bottom: 5px;
 		}
-		&__location {
-		}
 	}
 	&__heart {
 		position: absolute;
@@ -120,7 +118,7 @@
 		& .card-meal__selectBtn {
 			width: 59px;
 			i {
-				animation: select-image $standard-transition-time + 200ms both;
+				animation: select-image $standard-transition-time + 50ms both;
 			}
 		}
 	}
@@ -129,12 +127,14 @@
 @keyframes select-image {
 	0% {
 		transform: rotate(90deg);
+		left: 0px;
 	}
 	20% {
 		transform: rotate(90deg);
 	}
 	100% {
 		transform: rotate(360deg);
+		left: 20px;
 	}
 }
 
