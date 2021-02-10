@@ -351,18 +351,20 @@ a:visited {
 }
 
 .card-meal:hover .card-meal__selectBtn i {
-  animation: select-image 0.6s both;
+  animation: select-image 0.45s both;
 }
 
 @keyframes select-image {
   0% {
     transform: rotate(90deg);
+    left: 0px;
   }
   20% {
     transform: rotate(90deg);
   }
   100% {
     transform: rotate(360deg);
+    left: 20px;
   }
 }
 
